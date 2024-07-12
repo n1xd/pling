@@ -34,7 +34,7 @@ const AboutUs = () => {
               </blockquote>
             </div>
             <div className="alumni-info">
-              <p>"Being a part of the Penn Linguistics community was one of the best aspects of my time at Penn and one of the best decisions I made in my academic journey, and PLING played a role in making that experience what it was! Because of the Penn Linguistics community and support from undergraduates, grad students, and faculty alike, I am now continuing my education to pursue a PhD at the University of Michigan. The Penn Linguistics community offered me an opportunity to form connections with other linguists who have made me into the academic I am today, offering me support and guidance throughout my research and educational endeavors that has proven to be invaluable". 
+              <p>"Being a part of the Penn Linguistics community was one of the best aspects of my time at Penn and one of the best decisions I made in my academic journey, and PLING played a role in making that experience what it was! Because of the Penn Linguistics community and support from undergraduates, grad students, and faculty alike, I am now continuing my education to pursue a PhD at the University of Michigan. The Penn Linguistics community offered me an opportunity to form connections with other linguists who have made me into the academic I am today, offering me support and guidance throughout my research and educational endeavors that has proven to be invaluable." 
               </p>
               </div>
           </div>
