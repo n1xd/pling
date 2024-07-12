@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pling/static/css/main.e68ab0b5.css",
-    "main.js": "/pling/static/js/main.0f661cbf.js",
+    "main.js": "/pling/static/js/main.26537bc1.js",
     "static/js/488.7c3a9c5a.chunk.js": "/pling/static/js/488.7c3a9c5a.chunk.js",
     "static/media/introvid.mp4": "/pling/static/media/introvid.540a84a71d3636893118.mp4",
     "static/media/culture-fair.jpg": "/pling/static/media/culture-fair.0cbdd58e7f593c05cd49.jpg",
@@ -17,14 +17,15 @@
     "static/media/lightning-talks.jpg": "/pling/static/media/lightning-talks.23905c8ab6fc2086c9be.jpg",
     "static/media/about-us-pic.jpg": "/pling/static/media/about-us-pic.590b1fbf6cdc5b9d6c9d.jpg",
     "static/media/contact-pic.jpg": "/pling/static/media/contact-pic.e7184bb1d7f29532035e.jpg",
+    "static/media/penn-logo.png": "/pling/static/media/penn-logo.60ce919d5aface11326f.png",
     "static/media/loc-icon.jpg": "/pling/static/media/loc-icon.952cba71eaa35630cdeb.jpg",
     "index.html": "/pling/index.html",
     "main.e68ab0b5.css.map": "/pling/static/css/main.e68ab0b5.css.map",
-    "main.0f661cbf.js.map": "/pling/static/js/main.0f661cbf.js.map",
+    "main.26537bc1.js.map": "/pling/static/js/main.26537bc1.js.map",
     "488.7c3a9c5a.chunk.js.map": "/pling/static/js/488.7c3a9c5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e68ab0b5.css",
-    "static/js/main.0f661cbf.js"
+    "static/js/main.26537bc1.js"
   ]
 }
