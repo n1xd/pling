@@ -1,5 +1,4 @@
 import React from "react";
-import myvid from '../assets/intros/introvid.mp4';
 import './Home.css';
 import logo from "../assets/intros/penn-logo.png";
 
@@ -8,7 +7,7 @@ import logo from "../assets/intros/penn-logo.png";
 const Home = () => {
   return (
       <div className="home-container">
-        <video className="background-video" src={myvid} autoPlay loop muted />
+        <video className="background-video" src="https://raw.githubusercontent.com/n1xd/pling/main/src/assets/intros/introvid.mp4" autoPlay loop muted />
         <div className="home-content-container">
           <div className="image-text-container">
             <img src={logo} alt="Penn Logo" className="centered-image" />
