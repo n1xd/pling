@@ -7,7 +7,7 @@ import logo from "../assets/intros/penn-logo.png";
 const Home = () => {
   return (
       <div className="home-container">
-        <video className="background-video" src="https://raw.githubusercontent.com/n1xd/pling/main/src/assets/intros/introvid.mp4" autoPlay loop muted />
+        <video className="background-video" src="https://github.com/n1xd/pling/raw/81778bb9f119b52d586e17767a9937daf5c58998/src/assets/intros/introvid.mp4" autoPlay loop muted />
         <div className="home-content-container">
           <div className="image-text-container">
             <img src={logo} alt="Penn Logo" className="centered-image" />
