@@ -30,12 +30,13 @@ const AboutUs = () => {
             <div className="alumni-image-container">
             <img src={StudentOne} alt="Alumni" className="alumni-image" /> 
             <blockquote>
-                <footer>First Last</footer>
+                <footer>Sophie Faircloth</footer>
               </blockquote>
             </div>
             <div className="alumni-info">
-              <p>"Joining the Linguistics Society was one of the best decisions I made during my academic journey. The society not only deepened my understanding of language structures and theories but also provided a vibrant community where I could engage with like-minded peers and esteemed professors. Being part of this society truly enriched my educational experience and opened up numerous opportunities in the field of linguistics."</p>
-            </div>
+              <p>Being a part of the Penn Linguistics community was one of the best aspects of my time at Penn and one of the best decisions I made in my academic journey, and PLING played a role in making that experience what it was! Because of the Penn Linguistics community and support from undergraduates, grad students, and faculty alike, I am now continuing my education to pursue a PhD at the University of Michigan. The Penn Linguistics community offered me an opportunity to form connections with other linguists who have made me into the academic I am today, offering me support and guidance throughout my research and educational endeavors that has proven to be invaluable. 
+              </p>
+              </div>
           </div>
           {/* Repeat .alumni-container for additional alumni */}
         </section>
