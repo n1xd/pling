@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
-import './Layout.css'; // Make sure to create this CSS file as well
+import './Layout.css';
 
 const Layout = ({ children, backgroundImage }) => {
   const location = useLocation();
