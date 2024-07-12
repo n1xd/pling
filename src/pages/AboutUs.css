@@ -1,0 +1,147 @@
+.centered-paragraph {
+  width: 45vw; /* Set the maximum width for the paragraph */
+  margin: 0 auto; /* Center the paragraph block */
+  padding: 0 10px; /* Add some padding for better readability on small screens */
+}
+
+.about-content-container {
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative;
+  height: 100%;
+}
+
+.about-us {
+  color: white;
+}
+
+.section {
+  margin-bottom: 40px;
+  position: relative; /* Make it easier to position the line */
+}
+
+.section:last-child {
+  margin-bottom: 20vh; /* Adjust this value as needed */
+}
+
+.section::after {
+  content: '';
+  display: block;
+  width: 90%; /* Adjust this to match the navbar line */
+  height: 2px;
+  background-color: white;
+  margin: 10vh auto; /* Center the line and add vertical spacing */
+}
+
+.about p {
+  font-size: 1.5vw;
+  text-align: justify; /* Justify the text */
+  max-width: 800px; /* Set a maximum width for the paragraph */
+  margin: 0 auto; /* Center the paragraph block */
+  padding: 0 10px; /* Add some padding for better readability on small screens */
+}
+
+.why-penn {
+  width: 100%;
+  text-align: center; /* Center the title and line */
+}
+
+.why-penn-content {
+  display: flex;
+  justify-content: center; /* Center the list */
+  width: 100%;
+}
+
+.why-penn ul {
+  list-style: none; /* Remove default list style */
+  margin: 0; /* Remove default margin */
+  width: 55vw; /* Set maximum width for the content */
+  text-align: left;
+  padding-inline-start: 0;
+}
+
+.why-penn li {
+  display: flex;
+  grid-template-columns: 1em auto; /* Small column for bullet, rest for text */
+  align-items: start; /* Align items at the start */
+  margin-bottom: 2vh;
+  font-size: 1.5vw;
+}
+
+.why-penn li::before {
+  content: '\2BC8'; /* Unicode for hexa arrow (change to '\11208' for deca arrow) */
+  font-size: 1.5vw; /* Adjust size to match the font size */
+  color: white; /* Adjust color as needed */
+  align-self: start; /* Align bullet point at the start */
+  margin-right: 3vw;
+}
+
+  .alumni-container {
+    display: block;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 40px; /* Add space between alumni entries */
+  }
+  
+  .alumni-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 40px; /* Add space between alumni entries */
+  }
+  
+  .alumni-image-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the image and name vertically */
+    align-items: center; /* Center items horizontally */
+    margin-right: 5vw; /* Space between image and text */
+  }
+  
+  .alumni-image {
+    width: 15vw; /* Adjust size as needed */
+    height: 15vw; /* Adjust size as needed */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover;
+    padding: 3vh 0; /* Space between image and text */
+  }
+  
+  .alumni-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+  }
+  
+  .alumni-info p {
+
+    margin: 0; /* Remove default margin */
+    width: 40vw;
+    text-align: justify; /* Justify the text evenly */
+    -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;  
+}
+
+  
+  blockquote {
+    font-size: 3vh;
+    color: white;
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align the text */
+  }
+  
+  blockquote footer {
+    font-size: 2vw;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  
+  /* Custom Scrollbar Styles */
+  .content-container {
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .content-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  

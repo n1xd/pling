@@ -1,0 +1,109 @@
+.events-container {
+    text-align: center;
+    color: white;
+    padding-top: 20vh;
+    position: relative; /* Make container position relative */
+}
+
+.events-row {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    padding-left: 3vw; /* Add padding to the left side */
+    position: relative; /* Ensure gradient stays on top */
+    -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none;
+}
+
+.events-row:last-child {
+    margin-bottom: 20vh; /* Adjust this value as needed */
+}
+
+.events-row::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    flex: 0 0 auto;
+    width: 25vw;
+    margin-right: 40px; /* Increase space between cards */
+    position: relative;
+    opacity: 0.7; /* Initial opacity */
+    transition: transform 0.6s ease, opacity 1s ease; /* Increase transition duration */
+}
+
+.event-card img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.6s ease, opacity 2s ease, filter 1s ease; /* Increase transition duration and add filter */
+    position: relative;
+    z-index: 2; /* Ensure the image is above the gradient */
+}
+
+.event-ellipsis {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(ellipse 50% 50% at center, rgba(255,255,255,1), rgba(255,255,255,0) 100%);
+    opacity: 0;
+    z-index: 1;
+    transition: transform 0.6s ease, opacity 0.6s ease, filter 1s ease;
+    
+}
+
+.event-card:hover .event-ellipsis {
+    opacity: 1;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    opacity: 1;
+
+}
+
+.event-card:hover img {
+    transform: scale(1.05);
+    opacity: 1;
+    filter: brightness(150%); /* Apply brightness filter on hover */
+}
+
+.event-text {
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: auto;
+    text-align: left; /* Align text to the left */
+    color: white; /* Default color */
+    padding: 1vw 1vh;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: transform 0.6s ease; /* Ensure text zooms in together with the card */
+    z-index: 3; /* Ensure text is above the gradient */
+}
+
+.event-date {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    color: lightgray; /* Light color for the date */
+}
+
+.event-card:hover .event-text {
+    transform: scale(1.05); /* Ensure the text zooms in together with the card */
+}
+
+

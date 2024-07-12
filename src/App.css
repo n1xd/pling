@@ -1,0 +1,64 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure it takes the full viewport height */
+  font-family: 'Montserrat', sans-serif;
+  background-color: black; /* Set default background color to black */
+  color: white; /* Set default text color to white for better contrast */
+  overflow: auto;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 20vh;
+  display: block;
+  font-size: 3vw;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+h2 {
+  display: block;
+  font-size: 3vw;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+p {
+  font-size: 1.5vw;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.centered-text {
+  font-size: 1.5vw;
+  color: white;
+  max-width: 75%;
+  margin: 0 auto; /* Center text block */
+  padding: 0; /* Ensure no additional padding causes overflow */
+  box-sizing: border-box; /* Include padding in width calculation */
+  z-index: 1000;
+  text-align: justify; /* Justify the text evenly */
+    -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;  
+}
+
+.scrollable-content {
+  height: calc(100vh - 60px); /* Full viewport height minus navbar */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
