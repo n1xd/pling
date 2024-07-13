@@ -13,7 +13,7 @@ const Home = () => {
             <img src={logo} alt="Penn Logo" className="centered-image" />
             <h1 className="penngustics-text">Penn Linguistics Society</h1>
           </div>
-          <p className="centered-home-text">Welcome to Penn Linguistics Society (PLING) website! Find out more about us, browse events, and get involved in our community.</p>
+          <p className="centered-home-text">Welcome to the Penn Linguistics Society (PLING) website! Find out more about our student-run community, browse events, and share in our passion for language sciences.</p>
         </div>
       </div>
   );

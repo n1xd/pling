@@ -37,7 +37,7 @@ const Events = () => {
     const pastEvents = [
         {
             image: lightning,
-            text: 'Lagtning Talks',
+            text: 'Lightning Talks',
             date: 'Oct 18 2022',
             signup: require('../assets/events/lightning-talks-poster.png')
         },
