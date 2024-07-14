@@ -35,14 +35,14 @@ const AboutUs = () => {
               </blockquote>
             </div>
             <div className="alumni-info">
-              <p>"Being a part of the Penn Linguistics community was one of the best aspects of my time at Penn and one of the best decisions I made in my academic journey, and PLING played a role in making that experience what it was! Because of the Penn Linguistics community and support from undergraduates, grad students, and faculty alike, I am now continuing my education to pursue a PhD at the University of Michigan. The Penn Linguistics community offered me an opportunity to form connections with other linguists who have made me into the academic I am today, offering me support and guidance throughout my research and educational endeavors that has proven to be invaluable." 
+              <p className='student-voice'>"Being a part of the Penn Linguistics community was one of the best aspects of my time at Penn and one of the best decisions I made in my academic journey, and PLING played a role in making that experience what it was! Because of the Penn Linguistics community and support from undergraduates, grad students, and faculty alike, I am now continuing my education to pursue a PhD at the University of Michigan. The Penn Linguistics community offered me an opportunity to form connections with other linguists who have made me into the academic I am today, offering me support and guidance throughout my research and educational endeavors that has proven to be invaluable." 
               </p>
               </div>
           </div>
           <div className="alumni-container">
   
             <div className="alumni-info">
-              <p>"Penn's Linguistic Society has been an incredibly supportive and warm community to open up, discuss novel ideas with friends and develop a solid interest in research. With challenging courses and a very approachable faculty, the department has expanded my understanding of the world's linguistic diversity and sharpened my curiosity in purusing more formal research. At the same time, PLING's social life, from short student presentations and informal lunch hours to karaoke, has helped to create a close-knit environment between peers and professors — a liberating venue for new connections and rigorous academic work!" 
+              <p className='student-voice'>"Penn's Linguistic Society has been an incredibly supportive and warm community to open up, discuss novel ideas with friends and develop a solid interest in research. With challenging courses and a very approachable faculty, the department has expanded my understanding of the world's linguistic diversity and sharpened my curiosity in purusing more formal research. At the same time, PLING's social life, from short student presentations and informal lunch hours to karaoke, has helped to create a close-knit environment between peers and professors — a liberating venue for new connections and rigorous academic work!" 
               </p>
               </div>
               <div className="alumni-image-container">

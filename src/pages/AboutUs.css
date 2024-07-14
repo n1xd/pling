@@ -92,7 +92,9 @@
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack the image and name vertically */
     align-items: center; /* Center items horizontally */
-    margin-right: 5vw; /* Space between image and text */
+    justify-content: center; /* Center items vertically */
+    margin-right: 3vw; /* Space between image and text */
+    margin-left: 3vw;
   }
   
   .alumni-image {
@@ -109,8 +111,8 @@
     justify-content: center; /* Center items vertically */
   }
   
-  .alumni-info p {
-
+  .student-voice {
+    font-size: 1.4vw;
     margin: 0; /* Remove default margin */
     width: 40vw;
     text-align: justify; /* Justify the text evenly */
@@ -118,6 +120,7 @@
   -ms-hyphens: auto;
   hyphens: auto;  
 }
+
 
   
   blockquote {
