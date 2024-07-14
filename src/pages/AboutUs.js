@@ -40,16 +40,17 @@ const AboutUs = () => {
               </div>
           </div>
           <div className="alumni-container">
-            <div className="alumni-image-container">
+  
+            <div className="alumni-info">
+              <p>"Penn's Linguistic Society has been an incredibly supportive and warm community to open up, discuss novel ideas with friends and develop a solid interest in research. With challenging courses and a very approachable faculty, the department has expanded my understanding of the world's linguistic diversity and sharpened my curiosity in purusing more formal research. At the same time, PLING's social life, from short student presentations and informal lunch hours to karaoke, has helped to create a close-knit environment between peers and professors — a liberating venue for new connections and rigorous academic work!" 
+              </p>
+              </div>
+              <div className="alumni-image-container">
             <img src={StudentTwo} alt="Alumni" className="alumni-image" /> 
             <blockquote>
                 <footer>Daniel Shevchenko</footer>
               </blockquote>
             </div>
-            <div className="alumni-info">
-              <p>"Penn's Linguistic Society has been an incredibly supportive and warm community to open up, discuss novel ideas with friends and develop a solid interest in research. With challenging courses and a very approachable faculty, the department has expanded my understanding of the world's linguistic diversity and sharpened my curiosity in purusing more formal research. At the same time, PLING's social life, from short student presentations and informal lunch hours to karaoke, has helped to create a close-knit environment between peers and professors — a liberating venue for new connections and rigorous academic work!" 
-              </p>
-              </div>
           </div>
           {/* Repeat .alumni-container for additional alumni */}
         </section>
