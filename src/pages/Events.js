@@ -1,11 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import EventImage1 from '../assets/events/ai.jpg';
-import EventImage2 from '../assets/events/behind-the-curtain.jpg';
-import EventImage3 from '../assets/events/culture-fair.jpg';
-import tea from '../assets/events/reading-and-tea.jpg';
-import lightning from '../assets/events/lightning-talks.jpg';
-import hottakes from '../assets/events/hot-takes-pic.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import EventImage1 from '../assets/events/ai.webp';
+import EventImage2 from '../assets/events/behind-the-curtain.webp';
+import EventImage3 from '../assets/events/culture-fair.webp';
+import tea from '../assets/events/reading-and-tea.webp';
+import lightning from '../assets/events/lightning-talks.webp';
+import hottakes from '../assets/events/hot-takes-pic.webp';
 import './Events.css';
 
 const Events = () => {
@@ -52,7 +53,7 @@ const Events = () => {
     ];
 
     return (
-        <Layout backgroundImage={require('../assets/intros/events-pic.jpg')}>
+        <Layout backgroundImage={require('../assets/intros/events-pic.webp')}>
             <div className="events-container">
                 <h2>Upcoming Events</h2>
                 <p>Stay tuned for more info about our events in 2024/25!</p>
@@ -60,7 +61,7 @@ const Events = () => {
                     {upcomingEvents.map((event) => (
                         <a href={event.signup} key={event.id} target="_blank" rel="noopener noreferrer" className="event-card">
                             <div className="event-ellipsis"></div>
-                            <img src={event.image} alt={event.text} />
+                            <img loading='lazy' src={event.image} alt={event.text} />
                             <div className="event-text">
                                 <div className="event-date">{event.date}</div>
                                 {event.text}
@@ -74,7 +75,7 @@ const Events = () => {
                     {pastEvents.map((event) => (
                         <a href={event.signup} key={event.id} target="_blank" rel="noopener noreferrer" className="event-card">
                             <div className="event-ellipsis"></div>
-                            <img src={event.image} alt={event.text} />
+                            <LazyLoadImage src={event.image} alt={event.text} />
                             <div className="event-text">
                                 <div className="event-date">{event.date}</div>
                                 {event.text}

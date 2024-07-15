@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import './AboutUs.css';
-import StudentOne from '../assets/intros/student-pic.jpg';
-import StudentTwo from '../assets/intros/dan-pic.jpg';
+import StudentOne from '../assets/intros/student-pic.webp';
+import StudentTwo from '../assets/intros/dan-pic.webp';
 
 const AboutUs = () => {
     return (
-<Layout backgroundImage={require('../assets/intros/about-us-pic.jpg')}>
+<Layout backgroundImage={require('../assets/intros/about-us-pic.webp')}>
             <div className="about-us">
             <section className="section about">
           <h1>About Us</h1>
@@ -29,7 +29,7 @@ const AboutUs = () => {
           <h2>Student Voices</h2>
           <div className="alumni-container">
             <div className="alumni-image-container">
-            <img src={StudentOne} alt="Alumni" className="alumni-image" /> 
+            <img loading='lazy' src={StudentOne} alt="Alumni" className="alumni-image" /> 
             <blockquote>
                 <footer>Sophie Faircloth</footer>
               </blockquote>
@@ -46,7 +46,7 @@ const AboutUs = () => {
               </p>
               </div>
               <div className="alumni-image-container">
-            <img src={StudentTwo} alt="Alumni" className="alumni-image" /> 
+            <img loading='lazy' src={StudentTwo} alt="Alumni" className="alumni-image" /> 
             <blockquote>
                 <footer>Daniel Shevchenko</footer>
               </blockquote>
