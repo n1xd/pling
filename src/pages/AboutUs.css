@@ -1,13 +1,35 @@
+@keyframes fadeInBackground {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInContent {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body {
+  background-color: black; /* Start with a completely dark background */
+  animation: fadeInBackground 3s ease-in 1s forwards; /* Delay the background fade-in */
+  color: white; /* Set default text color to white */
+  opacity: 1; /* Ensure body content is visible */
+}
+
+.contact-container, .why-penn-content, .alumni-container, .about-content-container {
+  opacity: 0; /* Initial opacity set to 0 */
+  animation: fadeInContent 1s ease-in 0.5s forwards; /* Fade in with a delay, starting after the background */
+}
+
+.centered-paragraph, .about-us, .section, .about p, .why-penn, .why-penn ul, .why-penn li, .alumni-image-container, .alumni-info, .student-voice {
+  opacity: 0; /* Initial opacity set to 0 */
+  animation: fadeInContent 1s ease-in 0.5s forwards; /* Fade in with a delay, starting after the background */
+}
+
+/* Original CSS for the elements */
 .centered-paragraph {
   width: 45vw; /* Set the maximum width for the paragraph */
   margin: 0 auto; /* Center the paragraph block */
   padding: 0 10px; /* Add some padding for better readability on small screens */
-}
-
-.about-content-container {
-  overflow-y: auto; /* Enable vertical scrolling */
-  position: relative;
-  height: 100%;
 }
 
 .about-us {
@@ -75,76 +97,49 @@
   margin-right: 3vw;
 }
 
-  .alumni-container {
-    display: block;
-    align-items: center; /* Center items vertically */
-    margin-bottom: 40px; /* Add space between alumni entries */
-  }
-  
-  .alumni-container {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    margin-bottom: 40px; /* Add space between alumni entries */
-  }
-  
-  .alumni-image-container {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack the image and name vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    margin-right: 3vw; /* Space between image and text */
-    margin-left: 3vw;
-  }
-  
-  .alumni-image {
-    width: 15vw; /* Adjust size as needed */
-    height: 15vw; /* Adjust size as needed */
-    border-radius: 50%; /* Make the image round */
-    object-fit: cover;
-    padding: 3vh 0; /* Space between image and text */
-  }
-  
-  .alumni-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center items vertically */
-  }
-  
-  .student-voice {
-    font-size: 1.4vw;
-    margin: 0; /* Remove default margin */
-    width: 40vw;
-    text-align: justify; /* Justify the text evenly */
-    -webkit-hyphens: auto;
+.alumni-container {
+  display: block;
+  align-items: center; /* Center items vertically */
+  margin-bottom: 40px; /* Add space between alumni entries */
+}
+
+.alumni-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  margin-bottom: 40px; /* Add space between alumni entries */
+}
+
+.alumni-image-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack the image and name vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  margin-right: 3vw; /* Space between image and text */
+  margin-left: 3vw;
+}
+
+.alumni-image {
+  width: 15vw; /* Adjust size as needed */
+  height: 15vw; /* Adjust size as needed */
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover;
+  padding: 3vh 0; /* Space between image and text */
+}
+
+.alumni-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+}
+
+.student-voice {
+  font-size: 1.4vw;
+  margin: 0; /* Remove default margin */
+  width: 40vw;
+  text-align: justify; /* Justify the text evenly */
+  -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;  
 }
 
-
-  
-  blockquote {
-    font-size: 3vh;
-    color: white;
-    margin: 0; /* Remove default margin */
-    text-align: center; /* Center align the text */
-  }
-  
-  blockquote footer {
-    font-size: 2vw;
-    margin-top: 10px;
-    color: white;
-  }
-  
-  
-  /* Custom Scrollbar Styles */
-  .content-container {
-    overflow-y: scroll;
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
-  }
-  
-  .content-container::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
-  }
-  

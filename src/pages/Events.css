@@ -9,7 +9,7 @@
 }
 
 body {
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out 0.5s forwards; /* Adjusted to include delay */
     background-color: black; /* Start with a completely dark background */
 }
 
@@ -18,7 +18,8 @@ body {
     color: white;
     padding-top: 20vh;
     position: relative; /* Make container position relative */
-    animation: fadeIn 2s ease-in-out;
+    opacity: 0; /* Start with invisible content */
+    animation: fadeIn 2s ease-in-out 1s forwards; /* Fade in with a 1s delay */
 }
 
 .events-row {
@@ -32,7 +33,7 @@ body {
     -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer and Edge */
     scrollbar-width: none;
     opacity: 0; /* Initial opacity set to 0 */
-    animation: fadeInDelayed 1s ease-in-out 2s forwards; /* Add delayed animation */
+    animation: fadeInDelayed 1s ease-in-out 2s forwards; /* Add delayed animation with a 2s delay */
 }
 
 .events-row:last-child {
@@ -120,6 +121,7 @@ body {
 .event-card:hover .event-text {
     transform: scale(1.05); /* Ensure the text zooms in together with the card */
 }
+
 
 
 

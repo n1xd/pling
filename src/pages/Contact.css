@@ -1,81 +1,101 @@
+@keyframes fadeInBackground {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body {
+  background-color: black; /* Start with a completely dark background */
+  animation: fadeInBackground 3s ease-in 1s forwards; /* Delay the background fade-in */
+  color: white; /* Set default text color to white */
+  opacity: 1; /* Ensure body content is visible */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 .contact-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .contact-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .contact-container p {
-    font-size: 1.5vw;
-    width: 60%;
-    margin: 0 auto; /* Center the paragraph container */
-    color: white;
-    padding: 0;
-  }
-  
-  /* Image links styles */
-  .social-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the images */
-    gap: 5vw; /* Space between the images */
-    padding-top: 5vh;
-    padding-bottom: 12vh;
-  }
-  
-  .social-link {
-    display: block;
-    width: 7vw;
-    height: 7vw;
-    text-decoration: none; 
-    text-align: center;
-    opacity: 0.5;
-  }
-  
-  .social-link img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensure the image fits within the area */
-    background-color: transparent; /* Ensure transparent background */
-    border-radius: 10px;
-  }
-  
-  .social-link:hover {
-    transform: scale(1.1);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 1;
-  }
-  
-  .social-link span {
-    display: block;
-    margin-top: 5px;
-    font-size: 1.5vw; /* Same font size as p */
-    color: white; /* White labels */
-    font-family: 'Montserrat', sans-serif; /* Font Montserrat */
-    text-decoration: none; /* Cancel underline */
-  }
-  
-  
-  /* Membership button styles */
-  .apply-button {
-    display: inline-block;
-    padding: 1.5vw 3vw;
-    background-color: #990000; /* Penn logo red */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin: 1vw;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(0, 0, 0, 0.3); /* Add gradient effect */
-  }
-  
-  .apply-button:hover {
-    background-color: #cc0000; /* Slightly lighter red for hover effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(0, 0, 0, 0.3); /* Enhance gradient effect on hover */
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 1.5vw;
+  width: 60%;
+  margin: 0 auto; /* Center the paragraph container */
+  color: white;
+  padding: 0;
+}
+
+/* Image links styles */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the images */
+  gap: 5vw; /* Space between the images */
+  padding-top: 5vh;
+  padding-bottom: 12vh;
+}
+
+.social-link {
+  display: block;
+  width: 7vw;
+  height: 7vw;
+  text-decoration: none; 
+  text-align: center;
+  opacity: 0.5;
+}
+
+.social-link img, .social-link span {
+  opacity: 0; /* Initial opacity set to 0 */
+  animation: fadeIn 1s ease-in 1s forwards; /* Fade in with a delay */
+}
+
+.social-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the image fits within the area */
+  background-color: transparent; /* Ensure transparent background */
+  border-radius: 10px;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+}
+
+.social-link span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.5vw; /* Same font size as p */
+  color: white; /* White labels */
+  font-family: 'Montserrat', sans-serif; /* Font Montserrat */
+  text-decoration: none; /* Cancel underline */
+}
+
+/* Membership button styles */
+.apply-button {
+  display: inline-block;
+  padding: 1.5vw 3vw;
+  background-color: #990000; /* Penn logo red */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 1vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(0, 0, 0, 0.3); /* Add gradient effect */
+}
+
+.apply-button:hover {
+  background-color: #cc0000; /* Slightly lighter red for hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(0, 0, 0, 0.3); /* Enhance gradient effect on hover */
+}
