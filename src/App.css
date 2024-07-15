@@ -62,3 +62,17 @@ p {
 body::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+
+@media (max-width: 768px) {
+  p {
+    font-size: 5vw;
+  }
+
+  .centered-text {
+    font-size: 3.5vw;
+  }
+
+  h1, h2 {
+    font-size: 5vw;
+  }
+}

@@ -1,67 +1,77 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInVideo {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 /* Ensure the home-container takes the full height of the viewport */
 .home-container {
-  overflow: hidden;
-  height: 100vh; /* Full height of the viewport */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* Ensure it contains absolutely positioned children */
+overflow: hidden;
+height: 100vh; /* Full height of the viewport */
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative; /* Ensure it contains absolutely positioned children */
+background-color: black; /* Start with a black background */
+animation: fadeIn 2s ease-in 0.5s forwards; /* Fade in with a delay */
 }
 
 /* Keep the content-container centered */
 .home-content-container {
-  position: fixed;
+position: fixed;
+opacity: 0; /* Start with invisible content */
+animation: fadeIn 2s ease-in 0.5s forwards; /* Fade in with a delay */
 }
 
 /* Style the background video */
 .background-video {
-  position:fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 1;
-  transition: opacity 5s ease-in; 
-}
-
-.background-video.visible {
-  opacity: 0;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -1;
+opacity: 0; /* Start with video hidden */
+animation: fadeInVideo 2s ease-in 2s forwards; /* Fade in the video after content */
 }
 
 /* Container for image and text */
 .image-text-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2vw; /* Reduce the space between the image and text */
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2vw; /* Reduce the space between the image and text */
 }
 
 /* Centered image styles */
 .centered-image {
-  max-width: 15vw;
-  height: auto;
-  margin-bottom: 2vh; /* Add margin below the image */
+max-width: 15vw;
+height: auto;
+margin-bottom: 2vh; /* Add margin below the image */
 }
 
 /* Main text style */
 .penngustics-text {
-  font-family: 'Crimson Pro', serif;
-  font-weight: 400;
-  font-size: 8vw;
-  margin: 0; /* Remove default margin */
-  line-height: 1; /* Ensure line height does not cause overflow */
-  padding-top: 0vh;
+font-family: 'Crimson Pro', serif;
+font-weight: 400;
+font-size: 8vw;
+margin: 0; /* Remove default margin */
+line-height: 1; /* Ensure line height does not cause overflow */
+padding-top: 0vh;
 }
 
 /* Centered text style */
 .centered-home-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2vw;
-  width: 80%;
-  margin: 0 auto; /* Center text block */
-  padding: 0; /* Ensure no additional padding causes overflow */
-  box-sizing: border-box; /* Include padding in width calculation */
+font-family: 'Montserrat', sans-serif;
+font-size: 2vw;
+width: 80%;
+margin: 0 auto; /* Center text block */
+padding: 0; /* Ensure no additional padding causes overflow */
+box-sizing: border-box; /* Include padding in width calculation */
 }
 

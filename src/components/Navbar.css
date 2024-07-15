@@ -1,78 +1,133 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 1000; /* Ensure the navbar stays on top */
-  }
-  
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-    margin-left: 10px; /* Move the logo slightly to the right */
-  }
-  
-  .logo-image {
-    max-height: 50px; /* Adjust the size of the logo */
-    margin-right: 20px;
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Move the logo slightly to the right */
+}
+
+.logo-image {
+  max-height: 50px; /* Adjust the size of the logo */
+  margin-right: 20px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+  padding: 10px 15px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5vw;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for opacity */
+  opacity: 0.8; /* Set initial opacity */
+}
+
+.navbar-links a:hover {
+  transform: scale(1.2); /* Increase the size slightly */
+  opacity: 1; /* Full opacity on hover */
+}
+
+.navbar-gradient {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 25vh; /* Adjust height to extend the gradient using viewport height */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  z-index: 1000; /* Ensure the navbar stays on top */
+  box-sizing: border-box;
+}
+
+.navbar-line {
+  width: 95%;
+  height: 0.3vh; /* Adjust height using viewport height */
+  background-color: white;
+  position: absolute;
+  left: 2.5%; /* Center the line horizontally */
+  right: 2.5%; /* Center the line horizontally */
+  bottom: 15vh; /* Adjust this value to move the line closer to the navbar using viewport height */
+  z-index: 1000;
+  opacity: 0.8; 
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.mobile-menu-icon .line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+/* Default display for navbar links */
+.navbar-links.mobile {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #fff;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links.mobile.open {
+  display: flex;
+}
+
+.navbar-links.mobile li {
+  margin-left: 0;
+  padding: 10px 0;
+}
+
+.navbar-links.mobile a {
+  color: black;
+  font-size: 1.2em;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .navbar-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+      display: none;
   }
-  
-  .navbar-links li {
-    margin-left: 20px;
-    padding: 10px 15px;
-  }
-  
-  .navbar-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5vw;
-    display: block;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for opacity */
-    opacity: 0.8; /* Set initial opacity */
-  }
-  
-  .navbar-links a:hover {
-    transform: scale(1.2); /* Increase the size slightly */
-    opacity: 1; /* Full opacity on hover */
-  }
-  
-  .navbar-gradient {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 25vh; /* Adjust height to extend the gradient using viewport height */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-    z-index: 1000; /* Ensure the navbar stays on top */
-    box-sizing: border-box;
-  }
-  
-  .navbar-line {
-    width: 95%;
-    height: 0.3vh; /* Adjust height using viewport height */
-    background-color: white;
-    position: absolute;
-    left: 2.5%; /* Center the line horizontally */
-    right: 2.5%; /* Center the line horizontally */
-    bottom: 15vh; /* Adjust this value to move the line closer to the navbar using viewport height */
-    z-index: 1000;
-    opacity: 0.8; 
-  }
-  
 
-
+  .mobile-menu-icon {
+      display: flex;
+  }
+}
 
