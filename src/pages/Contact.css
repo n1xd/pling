@@ -25,6 +25,7 @@ body {
   text-align: center;
   opacity: 0; /* Initial opacity set to 0 */
   animation: fadeIn 1s ease-in 0s forwards; /* Fade in with a delay */
+  margin-bottom: 5vh; /* Add space after the last button */
 }
 
 .contact-container h2 {
