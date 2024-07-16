@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Directory containing your images
-const inputDir = path.join(__dirname, '../assets/icons');
-const outputDir = path.join(__dirname, '../assets/icons');
+const inputDir = path.join(__dirname, './icons');
+const outputDir = path.join(__dirname, './icons');
 
 // Ensure the output directory exists
 if (!fs.existsSync(outputDir)) {

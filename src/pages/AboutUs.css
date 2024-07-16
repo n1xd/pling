@@ -64,32 +64,51 @@ body {
 
 .why-penn-content {
   display: flex;
-  justify-content: center; /* Center the list */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
-.why-penn ul {
-  list-style: none; /* Remove default list style */
-  margin: 0; /* Remove default margin */
-  width: 55vw; /* Set maximum width for the content */
-  text-align: left;
-  padding-inline-start: 0;
-}
-
-.why-penn li {
+.why-penn-item {
   display: flex;
-  grid-template-columns: 1em auto; /* Small column for bullet, rest for text */
-  align-items: start; /* Align items at the start */
+  flex-direction: column; /* Stack the image and text vertically */
+  align-items: center;
   margin-bottom: 2vh;
   font-size: 1.5vw;
+  text-align: center; /* Center-align text for a better look */
 }
 
-.why-penn li::before {
-  content: '\2BC8'; /* Unicode for hexa arrow (change to '\11208' for deca arrow) */
-  font-size: 1.5vw; /* Adjust size to match the font size */
-  color: white; /* Adjust color as needed */
-  align-self: start; /* Align bullet point at the start */
-  margin-right: 3vw;
+.bullet-icon {
+  width: 7vw; /* Adjust size as needed */
+  height: 7vw; /* Adjust size as needed */
+  border-radius: 50%;
+  margin-bottom: 1vw; /* Add space between the image and text */
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.why-penn {
+  width: 100%;
+  text-align: center; /* Center the title and line */
+}
+
+.why-penn-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.why-penn-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+  font-size: 1.5vw;
 }
 
 .alumni-container {
@@ -97,6 +116,14 @@ body {
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
   margin-bottom: 40px; /* Add space between alumni entries */
+}
+
+.alumni-container:nth-child(odd) .alumni-image-container {
+  order: 1; /* Default order */
+}
+
+.alumni-container:nth-child(even) .alumni-image-container {
+  order: -1; /* Reverse order */
 }
 
 .alumni-image-container {
@@ -166,6 +193,10 @@ body {
     align-items: center; /* Center items horizontally */
     margin: 0 auto; /* Center the container */
     padding-bottom: 2vw;
+  }
+
+  .alumni-container .alumni-image-container {
+    order: -1 !important; /* Ensure order is consistent for mobile */
   }
 
   .alumni-image-container {

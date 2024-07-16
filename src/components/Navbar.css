@@ -15,7 +15,7 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  margin-left: 1vw; /* Move the logo slightly to the right */
+  padding-left: 1.5vw !important;
 }
 
 .logo-image {
