@@ -196,7 +196,7 @@ body {
   .why-penn li {
     display: flex;
     align-items: flex-start;
-    width: 80vw; /* Fixed width for the container */
+    width: auto; /* Fixed width for the container */
     margin: 0 auto; /* Center the container */
     padding-bottom: 2vh;
     list-style: none; /* Remove default bullet points */
