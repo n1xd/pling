@@ -133,6 +133,7 @@
 @media screen and (max-width: 768px) {
   .mobile-menu-icon {
     display: flex; /* Display the menu icon on smaller screens */
+    padding-right: 3vw;
   }
 
   .navbar-links.mobile {
@@ -148,6 +149,7 @@
 .navbar-logo {
   margin-left: 0; /* Move the logo slightly to the right */
   z-index: 1001;
+  padding-left: 3vw;
 }
 
 
