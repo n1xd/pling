@@ -147,6 +147,7 @@
 
 .navbar-logo {
   margin-left: 0; /* Move the logo slightly to the right */
+  z-index: 1001;
 }
 
 
