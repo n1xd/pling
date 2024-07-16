@@ -104,9 +104,7 @@ body {
   flex-direction: column; /* Stack the image and name vertically */
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
-  margin-right: 3vw; /* Space between image and text */
-  margin-left: 3vw;
-  width: 25vw;
+  width: 23vw;
 }
 
 .alumni-image {
