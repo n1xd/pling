@@ -106,6 +106,7 @@ body {
   justify-content: center; /* Center items vertically */
   margin-right: 3vw; /* Space between image and text */
   margin-left: 3vw;
+  width: 25vw;
 }
 
 .alumni-image {
