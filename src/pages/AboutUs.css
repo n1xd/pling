@@ -156,6 +156,7 @@ body {
     width: 80vw; /* Make paragraphs wider */
     margin: 0 auto; /* Center the paragraphs */
     padding-bottom: 0vw;
+    padding: 0vw;
   }
 
   h2 {
