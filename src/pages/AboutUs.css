@@ -184,6 +184,7 @@ body {
   .about p {
     width: 80vw; /* Make paragraphs wider */
     margin: 0 auto; /* Center the paragraphs */
+    padding: 0vw;
   }
 
   .centered-paragraph {
