@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1vh 2vw;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   z-index: 1000; /* Ensure the navbar stays on top */
@@ -15,12 +15,12 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  margin-left: 10px; /* Move the logo slightly to the right */
+  margin-left: 1vw; /* Move the logo slightly to the right */
 }
 
 .logo-image {
-  max-height: 50px; /* Adjust the size of the logo */
-  margin-right: 20px;
+  max-height: 7vh; /* Adjust the size of the logo */
+  margin-right: 2vw;
 }
 
 .navbar-links {
@@ -31,8 +31,8 @@
 }
 
 .navbar-links li {
-  margin-left: 20px;
-  padding: 10px 15px;
+  margin-left: 2vw;
+  padding: 1vh 1.5vw;
 }
 
 .navbar-links a {
@@ -62,12 +62,12 @@
 }
 
 .navbar-line {
-  width: 95%;
+  width: 95vw;
   height: 0.3vh; /* Adjust height using viewport height */
   background-color: white;
   position: absolute;
-  left: 2.5%; /* Center the line horizontally */
-  right: 2.5%; /* Center the line horizontally */
+  left: 2.5vw; /* Center the line horizontally */
+  right: 2.5vw; /* Center the line horizontally */
   bottom: 15vh; /* Adjust this value to move the line closer to the navbar using viewport height */
   z-index: 1000;
   opacity: 0.8; 
@@ -78,64 +78,73 @@
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  height: 24px;
-  width: 30px;
+  height: 3vh;
+  width: 8vw;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .mobile-menu-icon .line {
   width: 100%;
-  height: 3px;
+  height: 0.4vh;
   background-color: white;
 }
 
 /* Default display for navbar links */
 .navbar-links.mobile {
   display: none;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: #fff;
+  position: fixed; /* Fixed position to slide over content */
+  top: 0vh;
+  right: -100vw; /* Initially hide off-screen */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
   flex-direction: column;
-  width: 200px;
-  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vh; /* Always apply padding at the top */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+  transition: right 0.3s ease, padding 0.3s ease; /* Smooth transition for sliding and padding */
+  z-index: 1000; /* Ensure it is above other content */
 }
 
 .navbar-links.mobile.open {
-  display: flex;
+  right: 0; /* Slide in from the right edge */
 }
 
 .navbar-links.mobile li {
   margin-left: 0;
-  padding: 10px 0;
+  padding: 1.2vh 0; /* Slightly increase padding for better spacing */
+  text-align: center; /* Center-align the text */
 }
 
 .navbar-links.mobile a {
-  color: black;
-  font-size: 1.2em;
+  color: white; /* White text for better contrast */
+  font-size: 6vw; /* Adjust font size for smaller screens */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.mobile-menu-icon {
-  display: none;
+.navbar-links.mobile a:hover {
+  color: #ccc; /* Lighter color on hover */
 }
 
-@media (max-width: 768px) {
-  .navbar-links {
-      display: none;
-  }
-
+@media screen and (max-width: 768px) {
   .mobile-menu-icon {
-      display: flex;
+    display: flex; /* Display the menu icon on smaller screens */
   }
-}
 
-.navbar-line {
-  bottom: 15vh; /* Adjust this value to move the line closer to the navbar using viewport height */
+  .navbar-links.mobile {
+    display: flex; /* Initially hidden */
+    right: -100vw; /* Initially off-screen */
+  }
+
+  .navbar-links.mobile.open {
+    right: 0; /* Slide in from the right edge */
+  }
 }
 
 .navbar-logo {
   margin-left: 0; /* Move the logo slightly to the right */
 }
+
 

@@ -48,7 +48,7 @@ body {
   width: 90%; /* Adjust this to match the navbar line */
   height: 2px;
   background-color: white;
-  margin: 10vh auto; /* Center the line and add vertical spacing */
+  margin: 5vh auto; /* Center the line and add vertical spacing */
 }
 
 .about p {
@@ -151,29 +151,34 @@ body {
   h2 {
     font-size: 4vh;
   }
-  
+
   .student-voice {
     width: 80vw; /* Increase width for better readability */
     font-size: 4vw; /* Increase font size for better readability */
     margin: 0 auto; /* Center the student voice */
   }
-  
+
   .alumni-container {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     margin: 0 auto; /* Center the container */
   }
-  
+
   .alumni-image-container {
     margin-right: 0; /* Remove side margins */
     margin-left: 0; /* Remove side margins */
     margin-bottom: 3vh; /* Add spacing between image and text */
     text-align: center; /* Center the content within the container */
   }
-  
+
   .alumni-image {
     width: 40vw; /* Increase size */
     height: 40vw; /* Increase size */
+    padding: 0;
+  }
+
+  .alumni-info blockquote footer {
+    font-size: 4vw; /* Make alumni names bigger */
   }
 
   .about p {
@@ -184,6 +189,7 @@ body {
   .centered-paragraph {
     width: 80vw; /* Make centered paragraph wider */
     margin: 0 auto; /* Center the paragraph */
+    padding: 0vw;
   }
 
   .why-penn ul {
@@ -196,10 +202,11 @@ body {
     width: 80vw; /* Fixed width for the container */
     margin: 0 auto; /* Center the container */
     padding-bottom: 2vh;
+    list-style: none; /* Remove default bullet points */
   }
 
   .why-penn li::before {
-    content: '\2BC8'; /* Unicode for hexa arrow */
+    content: '👉'; /* Use finger emoji for bullet points on mobile */
     font-size: 4vw; /* Increase size of bullet points */
     color: white; /* Adjust color as needed */
     margin-right: 1vw; /* Adjust margin */
@@ -218,14 +225,5 @@ body {
   .why-penn-content {
     width: 80% !important;
     text-align: center;
+  }
 }
-}
-
-
-
-
-
-
-
-
-

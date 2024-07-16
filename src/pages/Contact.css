@@ -130,8 +130,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15vw; /* Space between the images */
-    padding-top: 3vh;
-    padding-bottom: 5vh;
+    padding-top: 7vh;
+    padding-bottom: 9vh;
     max-width: 90vw;
   }
 
