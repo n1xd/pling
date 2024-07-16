@@ -3,22 +3,28 @@
   100% { opacity: 1; }
 }
 
-body {
-  background-color: black; /* Start with a completely dark background */
-  animation: fadeInBackground 3s ease-in 0s forwards; /* Delay the background fade-in */
-  color: white; /* Set default text color to white */
-  opacity: 1; /* Ensure body content is visible */
-}
-
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+body {
+  background-color: black; /* Start with a completely dark background */
+  color: white; /* Set default text color to white */
+  overflow: hidden; /* Prevent scrollbars during fade-in */
+}
+
+.layout {
+  opacity: 0; /* Initial opacity for fade-in */
+  animation: fadeInBackground 1s ease-in 0s forwards; /* Fade in the background and content */
 }
 
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  opacity: 0; /* Initial opacity set to 0 */
+  animation: fadeIn 1s ease-in 0s forwards; /* Fade in with a delay */
 }
 
 .contact-container h2 {
@@ -99,3 +105,4 @@ body {
   background-color: #cc0000; /* Slightly lighter red for hover effect */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(0, 0, 0, 0.3); /* Enhance gradient effect on hover */
 }
+
