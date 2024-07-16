@@ -5,6 +5,11 @@
 
 body {
   color: white; /* Set default text color to white */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
+  min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  background-color: black; /* Ensure background color is black */
 }
 
 .contact-container, .why-penn-content, .alumni-container, .about-content-container {

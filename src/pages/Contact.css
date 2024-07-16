@@ -107,6 +107,11 @@ body {
 }
 
 @media screen and (max-device-width: 768px), screen and (device-aspect-ratio: 40/71), screen and (-webkit-device-pixel-ratio: 2) {
+  body {
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: auto; /* Ensure the body height adjusts to content */
+  }
+  
   .contact-container h2 {
     font-size: 1.5em; /* Adjust font size for smaller screens */
     margin-bottom: 15px;
@@ -124,17 +129,17 @@ body {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5vw; /* Space between the images */
+    gap: 15vw; /* Space between the images */
     padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
     max-width: 90vw;
   }
 
   .social-link {
-    width: 20vw; /* Adjust size for smaller screens */
-    height: 20vw; /* Adjust size for smaller screens */
+    width: 15vw; /* Adjust size for smaller screens */
+    height: 15vw; /* Adjust size for smaller screens */
     opacity: 0.7; /* Increase initial opacity */
-    margin-bottom: 5vh; /* Add more space between rows */
+    margin-bottom: 1vh; /* Add more space between rows */
   }
 
   .social-link span {
@@ -146,5 +151,9 @@ body {
     padding: 4vw 8vw; /* Increase padding for a bigger button */
     font-size: 3vw; /* Adjust font size to ensure text isn't too big */
     margin: 2vw; /* Ensure spacing around the button */
+  }
+
+  .contact-container, .why-penn-content, .alumni-container, .about-content-container {
+    overflow-y: auto; /* Allow vertical scrolling within containers */
   }
 }
