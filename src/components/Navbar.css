@@ -41,13 +41,13 @@
   font-weight: bold;
   font-size: 1.5vw;
   display: block;
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for opacity */
+  transition: opacity 0.3s ease; /* Only transition opacity */
   opacity: 0.8; /* Set initial opacity */
 }
 
-.navbar-links a:hover {
-  transform: scale(1.2); /* Increase the size slightly */
-  opacity: 1; /* Full opacity on hover */
+.navbar-links a:hover,
+.navbar-links a:focus {
+  opacity: 1; /* Full opacity on hover and focus */
 }
 
 .navbar-gradient {
@@ -121,11 +121,13 @@
   color: white; /* White text for better contrast */
   font-size: 6vw; /* Adjust font size for smaller screens */
   text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  transition: opacity 0.3s ease; /* Only transition opacity */
+  opacity: 0.8; /* Set initial opacity */
 }
 
-.navbar-links.mobile a:hover {
-  color: #ccc; /* Lighter color on hover */
+.navbar-links.mobile a:hover,
+.navbar-links.mobile a:focus {
+  opacity: 1; /* Full opacity on hover and focus */
 }
 
 @media screen and (max-width: 768px) {
@@ -146,5 +148,6 @@
 .navbar-logo {
   margin-left: 0; /* Move the logo slightly to the right */
 }
+
 
 
