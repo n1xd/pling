@@ -10,7 +10,7 @@
 
 body {
   background-color: black; /* Start with a completely dark background */
-  animation: fadeInBackground 3s ease-in 1s forwards; /* Delay the background fade-in */
+  animation: fadeInBackground 3s ease-in 0s forwards; /* Delay the background fade-in */
   color: white; /* Set default text color to white */
   opacity: 1; /* Ensure body content is visible */
 }

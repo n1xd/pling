@@ -9,7 +9,7 @@
 }
 
 body {
-    animation: fadeIn 2s ease-in-out 0.5s forwards; /* Adjusted to include delay */
+    animation: fadeIn 2s ease-in-out 0s forwards; /* Adjusted to include delay */
     background-color: black; /* Start with a completely dark background */
 }
 
