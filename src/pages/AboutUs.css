@@ -1,18 +1,10 @@
-@keyframes fadeInBackground {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 @keyframes fadeInContent {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 body {
-  background-color: black; /* Start with a completely dark background */
-  animation: fadeInBackground 3s ease-in 0s forwards; /* Delay the background fade-in */
   color: white; /* Set default text color to white */
-  opacity: 1; /* Ensure body content is visible */
 }
 
 .contact-container, .why-penn-content, .alumni-container, .about-content-container {

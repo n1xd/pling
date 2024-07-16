@@ -53,7 +53,7 @@ const Events = () => {
     ];
 
     return (
-        <Layout backgroundImage={require('../assets/intros/events-pic.webp')}>
+        <Layout backgroundImage={require('../assets/intros/events-pic.jpg')}>
             <div className="events-container">
                 <h2>Upcoming Events</h2>
                 <p>Stay tuned for more info about our events in 2024/25!</p>

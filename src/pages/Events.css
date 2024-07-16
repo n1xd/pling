@@ -9,7 +9,7 @@
 }
 
 body {
-    animation: fadeIn 2s ease-in-out 0s forwards; /* Adjusted to include delay */
+    animation: fadeIn 2s ease-in-out 0s forwards; /* Smoothly fade in the background */
     background-color: black; /* Start with a completely dark background */
 }
 
@@ -121,6 +121,9 @@ body {
 .event-card:hover .event-text {
     transform: scale(1.05); /* Ensure the text zooms in together with the card */
 }
+
+
+
 
 
 
