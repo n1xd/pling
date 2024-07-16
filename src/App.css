@@ -7,8 +7,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: black; /* Set default background color to black */
   color: white; /* Set default text color to white for better contrast */
-  overflow: auto;
+  overflow-y: auto; /* Enable vertical scrolling */
   text-align: center;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
 }
 
 h1 {

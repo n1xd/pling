@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import './App.css';
@@ -15,10 +15,21 @@ const Loading = () => (
   </div>
 );
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 const App = () => {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <MainContent />
       </div>
     </Router>
@@ -30,15 +41,15 @@ const MainContent = () => {
   const getBackgroundImage = (path) => {
     switch (path) {
       case '/about':
-        return 'path/to/about-us-background.jpg';
+        return 'path/to/about-us-background.webp';
       case '/events':
-        return 'path/to/events-background.jpg';
+        return 'path/to/events-background.webp';
       case '/board':
-        return 'path/to/board-background.jpg';
+        return 'path/to/board-background.webp';
       case '/contact':
-        return 'path/to/contact-background.jpg';
+        return 'path/to/contact-background.webp';
       default:
-        return 'path/to/home-background.jpg';
+        return 'path/to/home-background.webp';
     }
   };
 
@@ -58,6 +69,7 @@ const MainContent = () => {
 };
 
 export default App;
+
 
 
 
