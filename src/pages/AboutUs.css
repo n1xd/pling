@@ -177,10 +177,6 @@ body {
     padding: 0;
   }
 
-  .alumni-info blockquote footer {
-    font-size: 4vw; /* Make alumni names bigger */
-  }
-
   .about p {
     width: 80vw; /* Make paragraphs wider */
     margin: 0 auto; /* Center the paragraphs */
