@@ -131,3 +131,11 @@
   }
 }
 
+.navbar-line {
+  bottom: 12vh; /* Adjust this value to move the line closer to the navbar using viewport height */
+}
+
+.navbar-logo {
+  margin-left: 0; /* Move the logo slightly to the right */
+}
+
