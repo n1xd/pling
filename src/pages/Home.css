@@ -75,3 +75,24 @@ padding: 0; /* Ensure no additional padding causes overflow */
 box-sizing: border-box; /* Include padding in width calculation */
 }
 
+@media screen and (max-device-width: 768px), screen and (device-aspect-ratio: 40/71), screen and (-webkit-device-pixel-ratio: 2) {
+  .penngustics-text {
+    font-size: 12vw; /* Increase font size for better readability */
+    margin-bottom: 3vh;
+  }
+
+  .centered-home-text {
+    font-size: 4vw; /* Increase font size for better readability */
+  }
+
+  .centered-image {
+    max-width: 30vw; /* Increase size of the image */
+    margin-bottom: 1vh; /* Adjust margin below the image */
+  }
+
+  .image-text-container {
+    flex-direction: column; /* Stack image and text vertically */
+    gap: 0vh; /* Adjust gap between image and text */
+  }
+}
+
