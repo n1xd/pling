@@ -234,4 +234,8 @@ body {
     text-align: center;
 
   }
+
+  .section::after {
+    width: 95%;
+  }
 }
