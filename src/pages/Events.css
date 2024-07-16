@@ -122,6 +122,56 @@ body {
     transform: scale(1.05); /* Ensure the text zooms in together with the card */
 }
 
+@media screen and (max-width: 768px) {
+  
+    .events-row {
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+      padding-left: 2vw; /* Adjust padding for smaller screens */
+      animation: fadeInDelayed 1s ease-in-out 2s forwards; /* Ensure animation plays correctly */
+    }
+  
+    .event-card {
+      width: 80vw; /* Make the cards wider on small screens */
+      margin-right: 20px; /* Reduce space between cards */
+      opacity: 1; /* Ensure cards are fully visible */
+    }
+  
+    .event-card img {
+      height: 20vh; /* Adjust height for smaller screens */
+    }
+  
+    .event-text {
+      font-size: 1em; /* Adjust text size for smaller screens */
+      bottom: 5px; /* Adjust positioning for smaller screens */
+      left: 5px; /* Adjust positioning for smaller screens */
+      padding: 2vw 2vh; /* Adjust padding for smaller screens */
+    }
+  
+    .event-date {
+      font-size: 0.7em; /* Adjust date text size for smaller screens */
+      margin-bottom: 3px; /* Adjust margin for smaller screens */
+    }
+  
+    .event-ellipsis {
+      width: 120%; /* Adjust size of the radial gradient */
+      height: 120%; /* Adjust size of the radial gradient */
+    }
+  
+    .event-card:hover {
+      transform: scale(1.03); /* Slightly reduce the zoom effect on hover */
+    }
+  
+    .event-card:hover img {
+      transform: scale(1.03); /* Slightly reduce the zoom effect on hover */
+    }
+  
+    .event-card:hover .event-text {
+      transform: scale(1.03); /* Ensure the text zooms in together with the card */
+    }
+  }
+  
+
 
 
 

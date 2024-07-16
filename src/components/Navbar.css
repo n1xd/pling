@@ -132,7 +132,7 @@
 }
 
 .navbar-line {
-  bottom: 12vh; /* Adjust this value to move the line closer to the navbar using viewport height */
+  bottom: 15vh; /* Adjust this value to move the line closer to the navbar using viewport height */
 }
 
 .navbar-logo {
