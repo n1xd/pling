@@ -142,10 +142,20 @@ body {
 
 /* Adjustments for touchscreen devices */
 @media screen and (max-device-width: 768px), screen and (device-aspect-ratio: 40/71), screen and (-webkit-device-pixel-ratio: 2) {
+  body {
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: auto; /* Ensure the body height adjusts to content */
+  }
+
+  .contact-container, .why-penn-content, .alumni-container, .about-content-container {
+    overflow-y: auto; /* Allow vertical scrolling within containers */
+  }
+
   .about p, .why-penn li {
     font-size: 4vw; /* Increase font size for better readability */
     width: 80vw; /* Make paragraphs wider */
     margin: 0 auto; /* Center the paragraphs */
+    padding: 0vw;
   }
 
   h2 {
@@ -177,10 +187,8 @@ body {
     padding: 0;
   }
 
-  .about p {
-    width: 80vw; /* Make paragraphs wider */
-    margin: 0 auto; /* Center the paragraphs */
-    padding: 0vw;
+  .alumni-info blockquote footer {
+    font-size: 4vw; /* Make alumni names bigger */
   }
 
   .centered-paragraph {
