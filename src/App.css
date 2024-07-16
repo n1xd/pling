@@ -56,8 +56,9 @@ p {
 }
 
 .scrollable-content {
-  height: calc(100vh - 60px); /* Full viewport height minus navbar */
+  height: 100%; /* Use full height */
   overflow-y: auto; /* Enable vertical scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
 }
 
 body::-webkit-scrollbar {
