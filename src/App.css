@@ -3,13 +3,14 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh; /* Ensure it takes the full viewport height */
+  min-height: 100vh; /* Ensure it takes the full viewport height */
   font-family: 'Montserrat', sans-serif;
   background-color: black; /* Set default background color to black */
   color: white; /* Set default text color to white for better contrast */
   overflow-y: auto; /* Enable vertical scrolling */
   text-align: center;
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  scroll-snap-type: y mandatory; /* Enable scroll snap */
 }
 
 h1 {
@@ -39,6 +40,7 @@ p {
   font-size: 1.5vw;
   width: 60%;
   margin: 0 auto;
+  scroll-snap-align: start; /* Snap each paragraph */
 }
 
 .centered-text {
@@ -50,15 +52,17 @@ p {
   box-sizing: border-box; /* Include padding in width calculation */
   z-index: 1000;
   text-align: justify; /* Justify the text evenly */
-    -webkit-hyphens: auto;
+  -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;  
+  scroll-snap-align: start; /* Snap each block of centered text */
 }
 
 .scrollable-content {
   height: 100%; /* Use full height */
   overflow-y: auto; /* Enable vertical scrolling */
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  scroll-snap-type: y mandatory; /* Enable scroll snap */
 }
 
 body::-webkit-scrollbar {
@@ -68,10 +72,12 @@ body::-webkit-scrollbar {
 @media (max-width: 768px) {
   p {
     font-size: 5vw;
+    scroll-snap-align: start; /* Snap each paragraph */
   }
 
   .centered-text {
     font-size: 3.5vw;
+    scroll-snap-align: start; /* Snap each block of centered text */
   }
 
   h1 {
@@ -82,3 +88,4 @@ body::-webkit-scrollbar {
     font-size: 7vw;
   }
 }
+
