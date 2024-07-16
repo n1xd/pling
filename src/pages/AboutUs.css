@@ -199,6 +199,7 @@ body {
 
   .why-penn ul {
     padding-inline-start: 0; /* Remove default padding */
+    width: 70vw;
   }
 
   .why-penn li {
@@ -228,7 +229,8 @@ body {
   }
 
   .why-penn-content {
-    width: 80% !important;
+    width: 100% !important;
     text-align: center;
+
   }
 }
