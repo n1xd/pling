@@ -155,7 +155,7 @@ body {
     font-size: 4vw; /* Increase font size for better readability */
     width: 80vw; /* Make paragraphs wider */
     margin: 0 auto; /* Center the paragraphs */
-    padding: 0vw;
+    padding-bottom: 0vw;
   }
 
   h2 {
@@ -166,6 +166,7 @@ body {
     width: 80vw; /* Increase width for better readability */
     font-size: 4vw; /* Increase font size for better readability */
     margin: 0 auto; /* Center the student voice */
+    padding-bottom: 5vh;
   }
 
   .alumni-container {
