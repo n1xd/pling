@@ -140,7 +140,7 @@ body {
   }
 
   .contact-container, .why-penn-content, .alumni-container, .about-content-container {
-    padding-bottom: 3vh; /* Add space at the bottom of the page */
+    padding-bottom: 1vh; /* Add space at the bottom of the page */
   }
 
   .about p, .why-penn li {
