@@ -140,7 +140,7 @@ body {
   }
 
   .contact-container, .why-penn-content, .alumni-container, .about-content-container {
-    padding-bottom: 10vh; /* Add space at the bottom of the page */
+    padding-bottom: 3vh; /* Add space at the bottom of the page */
   }
 
   .about p, .why-penn li {
@@ -159,19 +159,20 @@ body {
     width: 80vw; /* Increase width for better readability */
     font-size: 4vw; /* Increase font size for better readability */
     margin: 0 auto; /* Center the student voice */
-    padding-bottom: 3vh;
+    padding-bottom: 0vw;
   }
 
   .alumni-container {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     margin: 0 auto; /* Center the container */
+    padding-bottom: 2vw;
   }
 
   .alumni-image-container {
     margin-right: 0; /* Remove side margins */
     margin-left: 0; /* Remove side margins */
-    margin-bottom: 3vh; /* Add spacing between image and text */
+    margin-bottom: 5vw; /* Add spacing between image and text */
     text-align: center; /* Center the content within the container */
   }
 
