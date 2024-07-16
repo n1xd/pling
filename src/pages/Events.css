@@ -122,7 +122,7 @@ body {
     transform: scale(1.05); /* Ensure the text zooms in together with the card */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-device-width: 768px), screen and (device-aspect-ratio: 40/71), screen and (-webkit-device-pixel-ratio: 2) {
   
     .events-row {
       padding-top: 5vh;
@@ -132,13 +132,13 @@ body {
     }
   
     .event-card {
-      width: 80vw; /* Make the cards wider on small screens */
+      width: 70vw; /* Make the cards wider on small screens */
       margin-right: 20px; /* Reduce space between cards */
       opacity: 1; /* Ensure cards are fully visible */
     }
   
     .event-card img {
-      height: 20vh; /* Adjust height for smaller screens */
+      height: 25vh; /* Adjust height for smaller screens */
     }
   
     .event-text {

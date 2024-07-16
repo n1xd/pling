@@ -22,6 +22,14 @@ p {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-device-width: 768px), screen and (device-aspect-ratio: 40/71), screen and (-webkit-device-pixel-ratio: 2) {
+  .apply-button {
+    padding: 5vw 9vw; /* Increase padding for a bigger button */
+    font-size: 5vw; /* Keep font size to ensure text isn't too big */
+    margin: 2vw; /* Ensure spacing around the button */
+  }
+}
+
   
   
   
