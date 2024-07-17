@@ -10,6 +10,7 @@ body {
   overflow-y: auto; /* Enable vertical scrolling */
   text-align: center;
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  scroll-snap-type: y mandatory; /* Enable scroll snap */
 }
 
 h1 {
