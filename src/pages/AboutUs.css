@@ -166,11 +166,11 @@ body {
   }
 
   .contact-container, .why-penn-content, .alumni-container, .about-content-container {
-    padding-bottom: 1vh; /* Add space at the bottom of the page */
+    padding-bottom: 0vh; /* Add space at the bottom of the page */
   }
 
-  .about p, .why-penn li {
-    font-size: 4vw; /* Increase font size for better readability */
+  .about p{
+    font-size: 3.5vw; /* Increase font size for better readability */
     width: 80vw; /* Make paragraphs wider */
     margin: 0 auto; /* Center the paragraphs */
     padding-bottom: 0vw;
@@ -183,7 +183,7 @@ body {
 
   .student-voice {
     width: 80vw; /* Increase width for better readability */
-    font-size: 4vw; /* Increase font size for better readability */
+    font-size: 3.5vw; /* Increase font size for better readability */
     margin: 0 auto; /* Center the student voice */
     padding-bottom: 0vw;
   }
@@ -223,32 +223,6 @@ body {
     padding: 0vw;
   }
 
-  .why-penn ul {
-    padding-inline-start: 0; /* Remove default padding */
-    width: 70vw;
-  }
-
-  .why-penn li {
-    display: flex;
-    align-items: flex-start;
-    width: auto; /* Fixed width for the container */
-    margin: 0 auto; /* Center the container */
-    padding-bottom: 2vh;
-    list-style: none; /* Remove default bullet points */
-  }
-
-  .why-penn li::before {
-    content: '👉'; /* Use finger emoji for bullet points on mobile */
-    font-size: 4vw; /* Increase size of bullet points */
-    color: white; /* Adjust color as needed */
-    margin-right: 1vw; /* Adjust margin */
-    flex-shrink: 0; /* Prevent the bullet from shrinking */
-  }
-
-  .why-penn li > div {
-    width: 75vw; /* Adjust width of the text container */
-  }
-
   .section {
     width: 80vw; /* Make sections wider */
     margin: 0 auto; /* Center the sections */
@@ -257,7 +231,15 @@ body {
   .why-penn-content {
     width: 100% !important;
     text-align: center;
+  }
 
+  .bullet-icon {
+    width: 10vh; /* Adjust size as needed */
+    height: 10vh;
+  }
+  
+  .p {
+    width: 95%;
   }
 
   .section::after {
