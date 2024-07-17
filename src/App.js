@@ -1,6 +1,7 @@
 import React, { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
+import ErrorBoundary from './components/ErrorBoundary';
 import './App.css';
 
 const AboutUs = lazy(() => import('./pages/AboutUs'));
@@ -30,7 +31,9 @@ const App = () => {
     <Router>
       <div className="App">
         <ScrollToTop />
-        <MainContent />
+        <ErrorBoundary>
+          <MainContent />
+        </ErrorBoundary>
       </div>
     </Router>
   );
@@ -53,6 +56,17 @@ const MainContent = () => {
     }
   };
 
+  useEffect(() => {
+    // Force repaint on initial load
+    const forceRepaint = () => {
+      document.body.style.display = 'none';
+      void document.body.offsetHeight; // Trigger reflow
+      document.body.style.display = 'block';
+    };
+
+    forceRepaint();
+  }, []);
+
   return (
     <Layout backgroundImage={getBackgroundImage(location.pathname)}>
       <Suspense fallback={<Loading />}>
@@ -69,6 +83,7 @@ const MainContent = () => {
 };
 
 export default App;
+
 
 
 
