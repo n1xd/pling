@@ -19,7 +19,7 @@ const Contact = () => {
     <div className="social-links">
     <a href="https://discord.gg/xgvakCFm" target="_blank" rel="noopener noreferrer" className="social-link">
       <img loading='lazy' src={DiscordIcon} alt="Discord" />
-      <span>Facebook</span>
+      <span>Discord</span>
     </a>
     <a href="https://www.facebook.com/groups/PennLing/?fref=nf" target="_blank" rel="noopener noreferrer" className="social-link">
       <img loading='lazy' src={FacebookIcon} alt="Facebook" />
