@@ -7,7 +7,7 @@ import EventImage3 from '../assets/events/culture-fair.webp';
 import tea from '../assets/events/reading-and-tea.webp';
 import lightning from '../assets/events/lightning-talks.webp';
 import hottakes from '../assets/events/hot-takes-pic.webp';
-import opening from '../assets/events/fireworks.webp';
+import opening from '../assets/events/firework.webp';
 import './Events.css';
 
 const Events = () => {
