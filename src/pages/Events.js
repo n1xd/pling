@@ -15,11 +15,16 @@ const Events = () => {
             image: tea,
             text: 'Opening Event of 2024/25',
             date: 'Sep 18 2024',
-            signup: require('https://lu.ma/4tfzlph7')
+            signup: 'https://lu.ma/4tfzlph7',
         },
         {
             image: EventImage1,
             text: 'LLM Workshop',
+            date: 'details coming soon',
+        },
+        {
+            image: tea,
+            text: 'Reading & Tea',
             date: 'details coming soon',
         },
         {
