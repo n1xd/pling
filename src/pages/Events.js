@@ -7,12 +7,13 @@ import EventImage3 from '../assets/events/culture-fair.webp';
 import tea from '../assets/events/reading-and-tea.webp';
 import lightning from '../assets/events/lightning-talks.webp';
 import hottakes from '../assets/events/hot-takes-pic.webp';
+import opening from '../assets/events/fireworks.webp';
 import './Events.css';
 
 const Events = () => {
     const upcomingEvents = [
         {
-            image: tea,
+            image: opening,
             text: 'Opening Event of 2024/25',
             date: 'Sep 18 2024',
             signup: 'https://lu.ma/4tfzlph7',
