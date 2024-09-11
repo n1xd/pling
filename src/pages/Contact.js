@@ -7,6 +7,7 @@ import GmailIcon from '../assets/icons/gmail-icon.webp';
 import LocationIcon from '../assets/icons/loc-icon.webp';
 import WebsiteIcon from '../assets/icons/link-icon.webp';
 import FeedbackIcon from '../assets/icons/feedback-icon.webp';
+import DiscordIcon from '../assets/icons/discord-icon.webp';
 
 const Contact = () => {
     return (
@@ -16,6 +17,10 @@ const Contact = () => {
         <p>Connect with us on social media, visit our department's website for more information about Penn Linguistics, and share your feedback on our events to help us improve.</p>
     
     <div className="social-links">
+    <a href="https://discord.gg/xgvakCFm" target="_blank" rel="noopener noreferrer" className="social-link">
+      <img loading='lazy' src={DiscordIcon} alt="Discord" />
+      <span>Facebook</span>
+    </a>
     <a href="https://www.facebook.com/groups/PennLing/?fref=nf" target="_blank" rel="noopener noreferrer" className="social-link">
       <img loading='lazy' src={FacebookIcon} alt="Facebook" />
       <span>Facebook</span>
