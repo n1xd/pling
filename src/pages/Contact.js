@@ -25,7 +25,7 @@ const Contact = () => {
       <img loading='lazy' src={FacebookIcon} alt="Facebook" />
       <span>Facebook</span>
     </a>
-    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
+    <a href="https://www.instagram.com/pennguists?igsh=MTQ1dHY5cnQ1dTQ1Zg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="social-link">
       <img loading='lazy' src={InstagramIcon} alt="Instagram" />
       <span>Instagram</span>
     </a>
