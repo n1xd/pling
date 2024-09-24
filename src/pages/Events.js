@@ -22,6 +22,7 @@ const Events = () => {
             image: EventImage1,
             text: 'LLM Workshop',
             date: 'details coming soon',
+            signup: require('../assets/events/thenewmind.png'),
         },
         {
             image: tea,
