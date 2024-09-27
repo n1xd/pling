@@ -17,7 +17,7 @@ const Contact = () => {
         <p>Connect with us on social media, visit our department's website for more information about Penn Linguistics, and share your feedback on our events to help us improve.</p>
     
     <div className="social-links">
-    <a href="https://discord.gg/xgvakCFm" target="_blank" rel="noopener noreferrer" className="social-link">
+    <a href="https://discord.gg/y59Cna3pnu" target="_blank" rel="noopener noreferrer" className="social-link">
       <img loading='lazy' src={DiscordIcon} alt="Discord" />
       <span>Discord</span>
     </a>
