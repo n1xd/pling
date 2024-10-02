@@ -8,10 +8,17 @@ import tea from '../assets/events/reading-and-tea.webp';
 import lightning from '../assets/events/lightning-talks.webp';
 import hottakes from '../assets/events/hot-takes-pic.webp';
 import opening from '../assets/events/firework.webp';
+import mic from '../assets/events/mic.webp';
 import './Events.css';
 
 const Events = () => {
     const upcomingEvents = [
+        {
+            image: mic,
+            text: 'Lightning Talks',
+            date: 'Oct 17 2024',
+            signup: 'https://lu.ma/gme3luwp',
+        },
         {
             image: EventImage1,
             text: 'LLM Workshop',
