@@ -10,89 +10,69 @@
 
 /* Ensure the home-container takes the full height of the viewport */
 .home-container {
-overflow: hidden;
-height: 100vh; /* Full height of the viewport */
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative; /* Ensure it contains absolutely positioned children */
-background-color: black; /* Start with a black background */
-animation: fadeIn 2s ease-in 0.5s forwards; /* Fade in with a delay */
+  overflow: hidden;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure it contains absolutely positioned children */
+  background-color: black; /* Background color */
+  animation: fadeIn 2s ease-in 0.5s forwards;
 }
 
 /* Keep the content-container centered */
 .home-content-container {
-position: fixed;
-opacity: 0; /* Start with invisible content */
-animation: fadeIn 2s ease-in 0.5s forwards; /* Fade in with a delay */
+  position: fixed;
+  opacity: 0;
+  animation: fadeIn 2s ease-in 0.5s forwards;
 }
 
 /* Style the background video */
 .background-video {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-z-index: -1;
-opacity: 0; /* Start with video hidden */
-animation: fadeInVideo 2s ease-in 2s forwards; /* Fade in the video after content */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+  animation: fadeInVideo 2s ease-in 2s forwards;
 }
 
 /* Container for image and text */
 .image-text-container {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 2vw; /* Reduce the space between the image and text */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  gap: 20px; /* Fixed space between the image and text */
 }
 
-/* Centered image styles */
+/* Penn logo (fixed size) */
 .centered-image {
-max-width: 15vw;
-height: auto;
-margin-bottom: 2vh; /* Add margin below the image */
+  width: 200px; /* Fixed width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Fixed margin */
+  object-fit: contain;
 }
 
-/* Main text style */
+/* Main heading text */
 .penngustics-text {
-font-family: 'Crimson Pro', serif;
-font-weight: 400;
-font-size: 8vw;
-margin: 0; /* Remove default margin */
-line-height: 1; /* Ensure line height does not cause overflow */
-padding-top: 0vh;
+  font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-size: 64px; /* Fixed font size */
+  margin: 0; /* Remove margin */
+  line-height: 1;
+  padding-top: 0;
 }
 
-/* Centered text style */
+/* Smaller centered text */
 .centered-home-text {
-font-family: 'Montserrat', sans-serif;
-font-size: 2vw;
-width: 80%;
-margin: 0 auto; /* Center text block */
-padding: 0; /* Ensure no additional padding causes overflow */
-box-sizing: border-box; /* Include padding in width calculation */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px; /* Fixed font size */
+  width: 80%;
+  margin: 0 auto; /* Center the text block */
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media screen and (max-device-width: 768px), screen and (device-aspect-ratio: 40/71), screen and (-webkit-device-pixel-ratio: 2) {
-  .penngustics-text {
-    font-size: 12vw; /* Increase font size for better readability */
-    margin-bottom: 3vh;
-  }
-
-  .centered-home-text {
-    font-size: 4vw; /* Increase font size for better readability */
-  }
-
-  .centered-image {
-    max-width: 30vw; /* Increase size of the image */
-    margin-bottom: 1vh; /* Adjust margin below the image */
-  }
-
-  .image-text-container {
-    flex-direction: column; /* Stack image and text vertically */
-    gap: 0vh; /* Adjust gap between image and text */
-  }
-}
-
