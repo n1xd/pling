@@ -13,12 +13,7 @@ import './Events.css';
 
 const Events = () => {
     const upcomingEvents = [
-        {
-            image: mic,
-            text: 'Lightning Talks',
-            date: 'Oct 17 2024',
-            signup: 'https://lu.ma/gme3luwp',
-        },
+        
         {
             image: EventImage1,
             text: 'LLM Workshop',
@@ -44,6 +39,12 @@ const Events = () => {
     ];
 
     const pastEvents = [
+        {
+            image: mic,
+            text: 'Lightning Talks',
+            date: 'Oct 17 2024',
+            signup: 'https://lu.ma/gme3luwp',
+        },
         {
             image: opening,
             text: 'Opening Event of 2024/25',
