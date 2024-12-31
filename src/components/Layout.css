@@ -59,7 +59,12 @@
 
 @media (max-width: 768px) {
   .fixed-background {
-    height: 100vh;
+    height: 50vh; /* Set a percentage of the viewport height */
+    width: auto; /* Maintain aspect ratio */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
 }
 
