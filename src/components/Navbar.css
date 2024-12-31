@@ -98,7 +98,7 @@
   .navbar-links {
     position: fixed;
     top: 0;
-    right: -100vw; /* Initially hidden outside the viewport */
+    right: -105vw; /* Initially hidden outside the viewport */
     height: 100vh;
     width: 100vw; /* Width of the slide-out menu */
     flex-direction: column;
@@ -106,6 +106,7 @@
     transition: right 0.3s ease; /* Smooth slide effect */
     z-index: 1001; /* Above the main navbar */
     padding-top: 10vh; /* Space from the top for better visibility */
+    padding-right: 5vw;
   }
 
   .navbar-links.open {
