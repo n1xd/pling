@@ -1,65 +1,49 @@
+/* Layout container */
 .layout {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow: hidden; /* Prevent overflow issues */
 }
 
+/* Fixed background styling */
 .fixed-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1; /* Ensure it's behind everything */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1; /* Ensure the background is behind the content */
+  background-attachment: fixed; /* Keeps the background fixed during scroll */
 }
+
+/* Overlay for optional darkening */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black layer */
-  z-index: 1; /* Ensure it is above the background image */
+  z-index: 0; /* Below content, above background */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional semi-transparent dark overlay */
 }
 
+/* Scrollable content container */
 .content-container {
   position: relative;
-  z-index: 2; /* Ensure it is above the overlay */
-  flex: 1;
-  overflow-y: auto; /* Enable vertical scrolling */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
+  z-index: 2; /* Above overlay and background */
+  overflow-y: auto; /* Enable scrolling for the content */
+  min-height: 100vh; /* Ensure content takes up full height */
 }
 
+/* Hide scrollbars for better UI */
 .content-container::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none; /* Hide scrollbar for Chrome, Safari */
 }
 
-.bottom-gradient {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 10vh; /* Adjust height as needed */
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  z-index: 1000; /* Ensure it is above other content but below navbar gradient */
-}
-
-.fade-in {
-  animation: fadeIn 1s ease-in-out;
-}
-
+/* Optional fade-in animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -68,6 +52,13 @@
     opacity: 1;
   }
 }
+
+.content-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 }
 
 body {
-  color: white; /* Set default text color to white */
+  color: #fcedfe ; /* Set default text color to white */
   background-color: black; /* Ensure background color is black */
   overflow-y: auto; /* Allow vertical scrolling */
   min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
@@ -25,11 +25,11 @@ body {
   width: 45vw; /* Set the maximum width for the paragraph */
   margin: 0 auto; /* Center the paragraph block */
   padding: 0 10px; /* Add some padding for better readability on small screens */
+  background: linear-gradient(to right, white, lightblue); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 
-.about-us {
-  color: white;
-}
 
 .section {
   margin-bottom: 40px;
@@ -77,6 +77,9 @@ body {
   margin-bottom: 2vh;
   font-size: 1.5vw;
   text-align: center; /* Center-align text for a better look */
+  background: linear-gradient(to right, white, lightblue); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 
 .bullet-icon {
@@ -155,7 +158,10 @@ body {
   text-align: justify; /* Justify the text evenly */
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
-  hyphens: auto;  
+  hyphens: auto;
+  background: linear-gradient(to right, white, lightblue); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   
 }
 
 /* Adjustments for touchscreen devices */

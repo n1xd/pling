@@ -1,0 +1,263 @@
+.workshop-header {
+    text-align: center;
+    margin-bottom: 2vh;
+    padding: 2vh 0; /* Space around the title and description */
+  }
+  
+  .workshop-title {
+    font-size: 12vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    padding-top: 10vh;
+    color: transparent; /* Make text transparent to show gradient */
+    background: linear-gradient(to  right, rgb(255, 52, 238), rgb(255, 255, 255)); /* Gradient from bottom-left to top-right */
+    -webkit-background-clip: text; /* Clip the gradient to the text (for WebKit browsers) */
+    background-clip: text; /* Clip the gradient to the text */
+    text-fill-color: transparent; /* Ensure text is transparent on WebKit browsers */
+  }
+  
+  .workshop-description {
+    font-size: 3vh;
+    color: #ddd; /* Subtle text color for the description */
+    width: 90%; /* Restrict width for readability */
+    margin: 0 auto; /* Center align */
+    padding: 3vh 3vw;
+    color: transparent; /* Make text transparent to show gradient */
+    background: linear-gradient(to top right, rgb(156, 165, 250), rgb(243, 245, 254)); /* Gradient from bottom-left to top-right */
+    -webkit-background-clip: text; /* Clip the gradient to the text (for WebKit browsers) */
+    background-clip: text; /* Clip the gradient to the text */
+    text-fill-color: transparent; /* Ensure text is transparent on WebKit browsers */
+  }
+
+
+  .workshop-nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(92, 0, 92, 0.505); /* Dark purple background */
+    display: flex;
+    flex-direction: column; /* Stack the header, description, and buttons vertically */
+    align-items: center;
+    padding: 5vh 0; /* Reduced padding to fit better */
+    z-index: 10;
+}
+
+/* Button container for alignment */
+.workshop-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3vw; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap buttons on smaller screens */
+}
+
+/* Individual button styling */
+.workshop-nav button {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    border: 0.15vw solid rgba(255, 255, 255, 0.7); /* Slightly transparent white border */
+    border-radius: 2vw; /* More rounded for a modern look */
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.5vh 2.5vw; /* Adjusted padding for balance */
+    font-size: 4vh; /* Slightly smaller font for readability */
+    color: white; /* White text color */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions for all properties */
+    width: 18vw; /* Adjusted width for better spacing */
+    height: 15vh; /* Remove fixed height, adjust based on padding */
+    text-align: center; /* Center text inside buttons */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle outer glow */
+    opacity: 0.8;
+}
+
+/* Hover effect for buttons */
+.workshop-nav button:hover {
+    color: white; /* Keep text white */
+    transform: scale(1.02); /* Slightly larger on hover */
+    background: rgba(255, 255, 255, 0); /* Add a subtle background glow */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5); /* Brighten glow */
+    border: 0.15vw solid rgba(255, 255, 255, 1); /* Fully opaque border */
+    opacity: 1;
+}
+
+
+
+  
+  /* Section styling */
+  .workshop-section {
+    padding: 5vh 5vw; /* Use viewport height and width for padding */
+    padding-bottom: 10vh;
+    margin: 10vh auto;
+    color: #121212;
+    max-width: 50vw; /* Limit section width using viewport width */
+    background: rgba(252, 231, 252, 0.9); /* Subtle gradient for depth */
+    border-radius: 1vw; /* Rounded corners using viewport width */
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1), inset 0 0.3vw 0.5vw rgba(255, 255, 255, 0.5); /* Enhanced shadow */
+    text-align: center;
+    opacity: 0.4;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .workshop-section.in-view {
+    opacity: 1; /* Brighten when in view */
+    background: rgba(252, 231, 252, 0.9); /* Lighten background */
+    box-shadow: 0 1.5vw 3vw rgba(0, 0, 0, 0.2), inset 0 0.4vw 0.7vw rgba(255, 255, 255, 0.6); /* Enhanced shadow */
+}
+  
+  /* Optional text styling inside the section */
+  .workshop-section h2 {
+    font-size: 4vh; /* Scale header size with viewport height */
+    margin-bottom: 2vh;
+    color: transparent; /* Make text transparent to show gradient */
+    background: linear-gradient(to top right, #bf01dc, #000000); /* Gradient from bottom-left to top-right */
+    -webkit-background-clip: text; /* Clip the gradient to the text (for WebKit browsers) */
+    background-clip: text; /* Clip the gradient to the text */
+    text-fill-color: transparent; /* Ensure text is transparent on WebKit browsers */
+  }
+  
+  .workshop-section h3 {
+    text-align: left;
+    padding: 0vh 2vw;
+    color: #121212;
+  }
+  
+
+  .workshop-section p {
+    font-size: 2vh; /* Scale paragraph size with viewport height */
+    line-height: 1.6;
+    text-align: left;
+    padding: 0vh 2vw;
+    margin: 0vh 0vw;
+    width: auto;
+  }
+  
+  
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Footer Section */
+.workshop-footer {
+    background-color: white;
+    padding: 3vh 3vw;
+    text-align: left;
+    border-top: 1px solid #ccc;
+  }
+  
+  .workshop-footer h3 {
+    font-size: 3vh;
+    color: #333;
+  }
+  
+  .workshop-footer p {
+    font-size: 2vh;
+    color: #555;
+    text-align: left;
+    margin: 0 0;
+    padding-bottom: 5vh;
+  }
+  
+  .sponsor-logos {
+    display: flex;
+    justify-content: left;
+    gap: 2vw;
+    padding-bottom: 3vh;
+  }
+  
+  .sponsor-logo {
+    height: 10vh;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    .workshop-title {
+        padding-top: 6vh;
+        font-size: 7vh; /* Reduce font size for smaller screens */
+    }
+
+    .workshop-description {
+        font-size: 2vh;
+        padding: 2vh 2vw; /* Reduce padding for better fit */
+    }
+
+    .workshop-buttons {
+        gap: 1.5vh; /* Reduce spacing between buttons */
+    }
+
+    .workshop-nav button {
+        background: rgba(255, 255, 255, 0.0); /* Slightly transparent white background */
+        border: 0.15vw solid rgba(255, 255, 255, 0.7); /* Slightly transparent white border */
+        border-radius: 5vw; /* More rounded for a modern look */
+        padding: 1.5vh 2.5vw; /* Adjusted padding for balance */
+        font-size: 2.5vh; /* Slightly smaller font for readability */
+        color: white; /* White text color */
+        width: 40vw; /* Adjusted width for better spacing */
+        height: 10vh; /* Remove fixed height, adjust based on padding */
+        text-align: center; /* Center text inside buttons */
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle outer glow */
+        opacity: 0.8;
+    }
+
+    .workshop-nav button:active {
+        color: white; /* Keep text white */
+        transform: scale(1.02); /* Slightly larger on tap */
+        background: rgba(255, 255, 255, 0.1); /* Add a subtle background glow */
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5); /* Brighten glow */
+        border: 0.15vw solid rgba(255, 255, 255, 1); /* Fully opaque border */
+        opacity: 1;
+    }
+
+    .workshop-section {
+        max-width: 95%; /* Increase width for smaller screens */
+        padding-bottom: 5vh;
+        margin: 5vh 2vw;
+        border-radius: 5vw;
+    }
+
+    .workshop-section h2 {
+        font-size: 2.5vh; /* Smaller header size */
+    }
+
+    .sponsor-logo {
+        height: 6vh; /* Further reduce logo size for small screens */
+    }
+
+    /* Suppress hover effects for touch devices under 768px */
+    .workshop-nav button:hover {
+        transform: none;
+        background: rgba(255, 255, 255, 0.0);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 5px rgba(255, 255, 255, 0.2);
+        border: 0.15vw solid rgba(255, 255, 255, 0.7);
+        opacity: 0.8;
+    }
+
+    .sponsor-logos {
+        flex-direction: column; /* Stack logos vertically */
+        align-items: flex-start; /* Center align the logos */
+        gap: 2vh; /* Add vertical spacing between logos */
+        padding: 2vh 10vw;
+    }
+
+    .sponsor-logo {
+        height: 7vh; /* Adjust size for smaller screens */
+        width: auto; /* Ensure aspect ratio is maintained */
+    }
+
+    .workshop-footer h3 {
+        font-size: 2.5vh; /* Reduce title size */
+        text-align: center; /* Center align the title */
+        margin-bottom: 1vh; /* Add spacing below the title */
+    }
+
+    .workshop-footer p {
+        font-size: 1.8vh; /* Reduce paragraph font size */
+        text-align: center; /* Center align the paragraph */
+        padding-bottom: 3vh; /* Adjust spacing for better fit */
+        width: auto;
+    }
+}
+
+  
+  
+  
+  
+  

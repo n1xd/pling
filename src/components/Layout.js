@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Navbar from './Navbar';
 import './Layout.css';
 
-const Layout = ({ children, backgroundImage }) => {
-  const location = useLocation();
+const Layout = ({ children, backgroundColor, backgroundImage }) => {
+  const location = useLocation(); // Access the current location
 
   useEffect(() => {
     const contentContainer = document.querySelector('.content-container');
@@ -15,25 +14,35 @@ const Layout = ({ children, backgroundImage }) => {
     }
   }, [location]);
 
-  const isHomePage = location.pathname === '/';
-
   return (
     <div className="layout">
-      <div className="fixed-background" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
+      {/* Fixed background */}
+      <div
+        className="fixed-background"
+        style={{
+          backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
+          backgroundColor: backgroundImage ? 'transparent' : backgroundColor || 'transparent',
+        }}
+      ></div>
+
+      {/* Content and overlay */}
       <div className="overlay"></div>
-      <div className="navbar-gradient">
-        <Navbar />
-        <div className="navbar-line"></div>
-      </div>
-      <div className={`content-container ${!isHomePage && 'bottom-padding'}`}>
-        {children}
-      </div>
-      {!isHomePage && <div className="bottom-gradient"></div>}
+      <div className="content-container">{children}</div>
     </div>
   );
 };
 
 export default Layout;
+
+
+
+
+
+
+
+
+
+
 
 
 

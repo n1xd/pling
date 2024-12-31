@@ -148,6 +148,10 @@ body {
     margin-top: 3px;
   }
 
+  .contact-page h1 {
+    padding-top: 5vh;
+  }
+
   .apply-button {
     padding: 4vw 8vw; /* Increase padding for a bigger button */
     font-size: 3vw; /* Adjust font size to ensure text isn't too big */

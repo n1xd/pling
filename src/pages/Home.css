@@ -1,78 +1,116 @@
+/* Fade-in animation for content */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
+/* Fade-in animation specifically for the video */
 @keyframes fadeInVideo {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
-/* Ensure the home-container takes the full height of the viewport */
+/* Home container: Full-page viewport with centered content */
 .home-container {
   overflow: hidden;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh; /* Full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Ensure it contains absolutely positioned children */
-  background-color: black; /* Background color */
-  animation: fadeIn 2s ease-in 0.5s forwards;
+  position: relative; /* To contain absolutely positioned children */
+  background-color: black; /* Fallback color for the background */
+  animation: fadeIn 1s ease-in forwards; /* Smooth fade-in */
 }
 
-/* Keep the content-container centered */
-.home-content-container {
-  position: fixed;
-  opacity: 0;
-  animation: fadeIn 2s ease-in 0.5s forwards;
-}
-
-/* Style the background video */
+/* Background video: Full-screen and positioned behind content */
 .background-video {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0;
-  animation: fadeInVideo 2s ease-in 2s forwards;
+  object-fit: cover; /* Ensures the video covers the screen proportionally */
+  z-index: -1; /* Places the video behind all other content */
+  opacity: 0; /* Initially hidden */
+  animation: fadeInVideo 1s ease-in forwards; /* Smooth fade-in effect */
 }
 
-/* Container for image and text */
-.image-text-container {
+/* Main content container */
+.home-content-container {
+  position: relative; /* Keeps it above the video */
+  z-index: 1; /* Ensures it displays above the video */
   display: flex;
   flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  gap: 20px; /* Fixed space between the image and text */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center the text */
+  gap: 30px; /* Adds spacing between elements */
+  opacity: 0; /* Starts hidden */
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 1s; /* Starts after the video fade-in */
 }
 
-/* Penn logo (fixed size) */
+/* Image and text wrapper: Aligns the logo and title */
+.image-text-container {
+  display: flex;
+  align-items: center; /* Align logo and title vertically */
+  justify-content: center; /* Center horizontally */
+  gap: 20px; /* Space between the logo and title */
+  padding-left: 5vw;
+  padding-top: 7vh;
+}
+
+/* Logo styling */
 .centered-image {
-  width: 200px; /* Fixed width */
+  width: 120px; /* Adjust the size of the logo */
   height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Fixed margin */
   object-fit: contain;
 }
 
-/* Main heading text */
+/* Main heading text styling */
 .penngustics-text {
-  font-family: 'Crimson Pro', serif;
-  font-weight: 400;
-  font-size: 64px; /* Fixed font size */
-  margin: 0; /* Remove margin */
-  line-height: 1;
-  padding-top: 0;
+  font-family: 'Crimson Pro', serif; /* Serif font for a professional feel */
+  font-weight: 1000; /* Bold font for emphasis */
+  font-size: 10vh; /* Dynamically scale with viewport height */
+  margin: 0; /* No extra spacing */
+  text-align: left; /* Align title to the left of the logo */
+  line-height: 1; /* Reduce line spacing */
+  padding-top: 0vh;
+  padding-bottom: 2vh;
 }
 
-/* Smaller centered text */
+/* Description text styling */
 .centered-home-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px; /* Fixed font size */
-  width: 80%;
-  margin: 0 auto; /* Center the text block */
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; /* Clean, modern sans-serif font */
+  font-size: 18px; /* Standard readable font size */
+  width: 60%; /* Constrain width for better readability */
+  margin: 0 auto; /* Center the text */
+  line-height: 1.6; /* Improve readability */
+  color: #E6F7FF; /* Light blue for better contrast against black */
 }
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .penngustics-text {
+    font-size: 6vh; /* Reduce size for smaller screens */
+    text-align: center; /* Center-align the text */
+  }
+
+  .centered-home-text {
+    font-size: 14px; /* Smaller text size for better readability */
+    width: 80%; /* Further constrain width */
+  }
+
+  .image-text-container {
+    flex-direction: column; /* Stack logo and title vertically */
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .centered-image {
+    width: 100px; /* Reduce logo size on smaller screens */
+  }
+}
+
+
+
+
+

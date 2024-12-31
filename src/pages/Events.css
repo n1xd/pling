@@ -1,174 +1,153 @@
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes fadeInDelayed {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-body {
-    animation: fadeIn 2s ease-in-out 0s forwards; /* Smoothly fade in the background */
-    background-color: black; /* Start with a completely dark background */
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .events-container {
-    text-align: center;
-    color: white;
-    padding-top: 20vh;
-    position: relative; /* Make container position relative */
-    opacity: 0; /* Start with invisible content */
-    animation: fadeIn 2s ease-in-out 1s forwards; /* Fade in with a 1s delay */
+  text-align: center;
+  color: white;
+  padding-top: 20vh;
+  position: relative; /* Keep container position relative */
+}
+
+.events-container h2,
+.events-container p,
+.events-row {
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 2s ease-in-out forwards; /* Smooth fade-infor content */
+}
+
+.events-container h2 {
+  animation-delay: 0.2s; /* Slight delay for header */
+}
+
+.events-container p {
+  animation-delay: 0.4s; /* Slight delay for description */
 }
 
 .events-row {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden; /* Prevent vertical scrolling */
-    padding-top: 7vh;
-    padding-bottom: 7vh;
-    padding-left: 3vw; /* Add padding to the left side */
-    position: relative; /* Ensure gradient stays on top */
-    -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer and Edge */
-    scrollbar-width: none;
-    opacity: 0; /* Initial opacity set to 0 */
-    animation: fadeInDelayed 1s ease-in-out 2s forwards; /* Add delayed animation with a 2s delay */
-}
-
-.events-row:last-child {
-    margin-bottom: 20vh; /* Adjust this value as needed */
+  display: flex;
+  overflow-x: auto;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  padding-left: 3vw; /* Add padding to the left side */
+  position: relative;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
 }
 
 .events-row::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
 .event-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit text color */
-    flex: 0 0 auto;
-    width: 25vw;
-    margin-right: 40px; /* Increase space between cards */
-    position: relative;
-    opacity: 0.7; /* Initial opacity */
-    transition: transform 0.6s ease, opacity 1s ease; /* Increase transition duration */
-}
-
-.event-card img {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.6s ease, opacity 2s ease, filter 1s ease; /* Increase transition duration and add filter */
-    position: relative;
-    z-index: 2; /* Ensure the image is above the gradient */
-}
-
-.event-ellipsis {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 150%;
-    height: 150%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background: radial-gradient(ellipse 50% 50% at center, rgba(255,255,255,1), rgba(255,255,255,0) 100%);
-    opacity: 0;
-    z-index: 1;
-    transition: transform 0.6s ease, opacity 0.6s ease, filter 1s ease;
-}
-
-.event-card:hover .event-ellipsis {
-    opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+  flex: 0 0 auto;
+  width: 25vw;
+  margin-right: 40px; /* Space between cards */
+  position: relative;
+  opacity: 1; /* Cards are visible immediately */
+  border-radius: 10px; /* Rounded corners for the whole card */
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensure no parts of the child elements overflow */
 }
 
 .event-card:hover {
-    transform: scale(1.05);
-    opacity: 1;
+  transform: scale(1.05); /* Scale the entire card */
+  box-shadow: 0 0 20px rgba(253, 251, 253, 0.8), 0 0 40px rgba(250, 3, 230, 0.7); /* Add glowing effect */
+  z-index: 10; /* Bring the hovered card to the front */
+}
+
+.event-card img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 10px; /* Match card corners */
+  transition: filter 0.3s ease; /* Smooth filter transitions */
 }
 
 .event-card:hover img {
-    transform: scale(1.05);
-    opacity: 1;
-    filter: brightness(150%); /* Apply brightness filter on hover */
+  filter: brightness(120%); /* Brighten the image */
 }
 
-.event-text {
-    font-weight: bold;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: auto;
-    text-align: left; /* Align text to the left */
-    color: white; /* Default color */
-    padding: 1vw 1vh;
-    border-radius: 5px;
-    font-size: 1.2em;
-    transition: transform 0.6s ease; /* Ensure text zooms in together with the card */
-    z-index: 3; /* Ensure text is above the gradient */
+.event-info {
+  position: absolute;
+  bottom: 2vh; /* Adjust bottom spacing based on viewport height */
+  left: 2vw; /* Adjust left spacing based on viewport width */
+  text-align: left;
+  z-index: 3;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.event-date, .event-text {
+  margin: 0; /* Ensure no unexpected margin shifts */
+  line-height: 1.2; /* Keep consistent line spacing */
+  color: white;
+  display: block; /* Ensure consistent block alignment */
 }
 
 .event-date {
-    font-size: 0.8em;
-    margin-bottom: 5px;
-    color: lightgray; /* Light color for the date */
+  color: lightgray;
+  font-size: 2vh;
 }
 
+.event-card:hover .event-info {
+  filter: brightness(120%); /* Brighten the text/info on hover */
+}
+
+.event-card:hover .event-date,
 .event-card:hover .event-text {
-    transform: scale(1.05); /* Ensure the text zooms in together with the card */
+  transform: none; /* Prevent independent scaling */
 }
 
-@media screen and (max-device-width: 768px), screen and (device-aspect-ratio: 40/71), screen and (-webkit-device-pixel-ratio: 2) {
-  
-    .events-row {
-      padding-top: 5vh;
-      padding-bottom: 5vh;
-      padding-left: 2vw; /* Adjust padding for smaller screens */
-      animation: fadeInDelayed 1s ease-in-out 2s forwards; /* Ensure animation plays correctly */
-    }
-  
-    .event-card {
-      width: 70vw; /* Make the cards wider on small screens */
-      margin-right: 20px; /* Reduce space between cards */
-      opacity: 1; /* Ensure cards are fully visible */
-    }
-  
-    .event-card img {
-      height: 25vh; /* Adjust height for smaller screens */
-    }
-  
-    .event-text {
-      font-size: 1em; /* Adjust text size for smaller screens */
-      bottom: 5px; /* Adjust positioning for smaller screens */
-      left: 5px; /* Adjust positioning for smaller screens */
-      padding: 2vw 2vh; /* Adjust padding for smaller screens */
-    }
-  
-    .event-date {
-      font-size: 0.7em; /* Adjust date text size for smaller screens */
-      margin-bottom: 3px; /* Adjust margin for smaller screens */
-    }
-  
-    .event-ellipsis {
-      display: none;
-    }
-  
-    .event-card:hover {
-      transform: none;
-    }
-  
-    .event-card:hover img {
-      transform: none;
-    }
-  
-    .event-card:hover .event-text {
-      transform: none;
-    }
+.event-card img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.event-card:hover img {
+  transform: scale(1.05); /* Scale image on hover */
+  filter: brightness(120%);
+}
+
+@media screen and (max-width: 768px) {
+  .events-row {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 2vw; /* Adjust padding for smaller screens */
   }
+
+  .event-card {
+    width: 70vw; /* Make the cards wider on small screens */
+    margin-right: 20px; /* Reduce space between cards */
+  }
+
+  .event-card img {
+    height: 25vh; /* Adjust height for smaller screens */
+  }
+
+  .event-text {
+    font-size: 1em; /* Adjust text size for smaller screens */
+    bottom: 5px; /* Adjust positioning for smaller screens */
+    left: 5px; /* Adjust positioning for smaller screens */
+  }
+
+  .event-date {
+    font-size: 0.7em; /* Adjust date text size for smaller screens */
+    margin-bottom: 3px; /* Adjust margin for smaller screens */
+  }
+}
+
+
+
+
   
 
 
