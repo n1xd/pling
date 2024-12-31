@@ -78,6 +78,7 @@
 
 @media (max-width: 768px) { /* Adjust breakpoint to match vw units */
 
+
   .navbar {
     box-sizing: border-box;
     width: 100vw;
@@ -98,7 +99,7 @@
   .navbar-links {
     position: fixed;
     top: 0;
-    right: -105vw; /* Initially hidden outside the viewport */
+    right: -110vw; /* Initially hidden outside the viewport */
     height: 100vh;
     width: 100vw; /* Width of the slide-out menu */
     flex-direction: column;
@@ -121,6 +122,14 @@
     text-align: right; /* Align text inside links to the right */
     display: block; /* Make links block elements so text-align works */
     padding: 0 0; /* Padding for clickable area */
+  }
+
+  .navbar-links a:hover {
+    background-color: transparent; /* Remove background color change */
+    transform: none; /* Disable the translateY effect */
+    box-shadow: none; /* Remove shadow effect */
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.6); /* Optional soft text glow */
+    transition: all 0.3s ease; /* Smooth transition */
   }
 }
 
