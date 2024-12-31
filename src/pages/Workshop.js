@@ -100,7 +100,7 @@ const Workshop = () => {
     {
       id: 'logistics',
       title: 'Logistics',
-      content: 'Information about dates and times, venues, and other possible workshop materials will be posted in Spring 2025.',
+      content: 'Information about dates and times, venues, and other possible workshop materials will be posted in Spring 2025. All our event will conclude with a reception and refreshments.',
     },
     {
       id: 'registration',
