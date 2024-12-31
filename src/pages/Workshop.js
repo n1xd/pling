@@ -65,32 +65,28 @@ const Workshop = () => {
           <div>
             <h3>Session 1: <span style={{ color: 'purple' }}>Can Machines Think?</span></h3>
             <p>
-              Explore the concept of intelligence, both natural and artificial, and challenge traditional notions of thinking and learning. 
-              This session examines biases imposed by linguistic sciences and encourages a fresh perspective on intelligence.
+              Session 1 opens up the floor for discussing the concept of intelligence, both natural and artificial, and challenge traditional notions of thinking and learning as known across language and cognition sciences. We explore biases stemming from these traditional definitions as well as new ways of looking at the concepts.
             </p>
 
             <h3>Session 2: <span style={{ color: 'purple' }}>Origins of AI-Generated Language</span></h3>
             <p>
-              Gain beginner-friendly insights into how large language models (LLMs) work, their differences from data memorisation, 
-              and a technical overview of challenges and solutions in this domain.
+              Session 2 offers beginner-friendly insights into how LLMs work on the technical level, exposes differences between learning and memorisation, and fosters critical thinking about the relationship between language and computation.
             </p>
 
             <h3>Session 3: <span style={{ color: 'purple' }}>Common Failures and (Mis)Alignment</span></h3>
             <p>
-              Understand the difficulties of creating aligned AI, the risks of uninterpretable AI systems, and how unresolved challenges 
-              may contribute to existential risks in artificial intelligence.
+                Session 3 introduces the key difficulties in creating aligned LLM systems and agents. In this session, participants get to understand what kinds of problems AI systems find challenging, discuss the consequences of uninterpretable and unexplainable AI, and see why unresolved questions can quickly become rather large-scale problems.
             </p>
 
             <h3>Session 4: <span style={{ color: 'purple' }}>Mitigating Risk</span></h3>
             <p>
-              Dive into AI safety approaches, from mechanistic interpretability to governance strategies, with examples of successful 
-              research and a critical evaluation of trade-offs between safety and performance.
+              Session 4 offers insights into various approaches to AI safety (e.g., mech-interp, governance, adversarial testing…), gives participaants the opportunity to see examples of success in AI safety research, and lays out the dilemma of balancing performace and safety of AI systems.
+ 
             </p>
 
             <h3>Session 5: <span style={{ color: 'purple' }}>Interdisciplinary Research and Safe AI</span></h3>
             <p>
-              Learn how interdisciplinary expertise contributes to LLM safety, with a focus on methods from language and cognition sciences 
-              and best practices for effective interdisciplinary collaboration and communication.
+            Session 5 highlights the necessity of interdisciplinary expertise for addressing the complexity of LLMs, explores methods from language and cognition sciences to enhance AI safety, and provides strategies for effective interdisciplinary communication and peer review.
             </p>
           </div>
         </div>
