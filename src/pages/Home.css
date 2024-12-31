@@ -104,6 +104,7 @@
   .image-text-container {
     flex-direction: column; /* Stack logo and title vertically */
     gap: 2vh; /* Reduce spacing */
+    padding: 0 0;
   }
 
   .centered-image {
@@ -111,7 +112,6 @@
   }
 
   .home-content-container {
-
     gap: 2vh; /* Adds spacing between elements */
 
   }
