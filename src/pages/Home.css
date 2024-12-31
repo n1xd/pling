@@ -103,11 +103,17 @@
 
   .image-text-container {
     flex-direction: column; /* Stack logo and title vertically */
-    gap: 10px; /* Reduce spacing */
+    gap: 2vh; /* Reduce spacing */
   }
 
   .centered-image {
     width: 100px; /* Reduce logo size on smaller screens */
+  }
+
+  .home-content-container {
+
+    gap: 2vh; /* Adds spacing between elements */
+
   }
 }
 
