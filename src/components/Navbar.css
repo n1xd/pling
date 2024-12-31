@@ -85,7 +85,7 @@
   }
 
   .mobile-menu-icon {
-    margin-right: 1vw;
+    margin-right: 0;
     display: flex;
     position: absolute;
     right: 5vw;
@@ -106,7 +106,6 @@
     transition: right 0.3s ease; /* Smooth slide effect */
     z-index: 1001; /* Above the main navbar */
     padding-top: 10vh; /* Space from the top for better visibility */
-    padding-right: 5vw;
   }
 
   .navbar-links.open {
@@ -120,7 +119,7 @@
   .navbar-links a {
     text-align: right; /* Align text inside links to the right */
     display: block; /* Make links block elements so text-align works */
-    padding: 0.5vh 2vw; /* Padding for clickable area */
+    padding: 0 0; /* Padding for clickable area */
   }
 }
 

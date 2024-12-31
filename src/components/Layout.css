@@ -59,7 +59,7 @@
 
 @media (max-width: 768px) {
   .fixed-background {
-    height: 100dvh; /* Use dynamic viewport height for mobile devices */
+    height: 100vh;
   }
 }
 
