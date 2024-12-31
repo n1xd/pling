@@ -61,7 +61,7 @@
   .fixed-background {
     height: 50vh; /* Set a percentage of the viewport height */
     width: auto; /* Maintain aspect ratio */
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
