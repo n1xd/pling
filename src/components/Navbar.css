@@ -2,15 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 1vh 2vw; /* Adjust padding using vh/vw */
   background-color: rgba(0, 0, 0, 0.8); /* Black with slight transparency */
-  font-size: 18px; /* Slightly larger font size */
+  font-size: 3vh; /* Font size relative to viewport height */
   position: fixed; /* Make the navbar fixed at the top */
   top: 0;
   left: 0;
-  width: 100%; /* Ensure it spans the full width */
+  width: 100vw; /* Span the full viewport width */
   z-index: 1000; /* Place it above the layout and other elements */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add depth with a shadow */
+  box-shadow: 0px 0.5vh 0.8vh rgba(0, 0, 0, 0.3); /* Add depth with a shadow */
 }
 
 .navbar-logo {
@@ -19,7 +19,7 @@
 }
 
 .navbar-logo img {
-  height: 40px; /* Adjust as necessary */
+  height: 5vh; /* Adjust as necessary using viewport height */
   width: auto;
   cursor: pointer; /* Make it clear the logo is clickable */
   transition: opacity 0.2s ease, transform 0.2s ease; /* Smooth transition for effects */
@@ -40,25 +40,25 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-right: 20px; /* Add some padding on the right */
+  padding-right: 2vw; /* Add some padding on the right using vw */
 }
 
 .navbar-links li {
-  margin: 0 10px;
+  margin: 0 1vw; /* Adjust margin between links */
 }
 
 .navbar-links a {
   text-decoration: none;
   color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
+  padding: 1vh 1.5vw; /* Padding relative to viewport */
+  border-radius: 0.5vh; /* Rounded corners using viewport height */
   transition: all 0.3s ease-in-out;
 }
 
 .navbar-links a:hover {
   background-color: rgba(255, 255, 255, 0.2); /* Button-like hover effect */
-  transform: translateY(2px); /* Press-down effect */
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(0.3vh); /* Press-down effect */
+  box-shadow: inset 0 0.3vh 0.5vh rgba(0, 0, 0, 0.5);
 }
 
 .mobile-menu-icon {
@@ -66,39 +66,61 @@
   cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
+  height: 3vh; /* Adjusted height using viewport */
 }
 
 .mobile-menu-icon .line {
-  width: 30px;
-  height: 3px;
+  width: 8vw; /* Width in viewport units */
+  height: 0.5vh; /* Height in viewport units */
   background-color: white;
-  border-radius: 5px;
+  border-radius: 0.5vh; /* Round the lines using vh */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Adjust breakpoint to match vw units */
 
   .navbar {
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
     max-width: 100vw;
   }
 
   .mobile-menu-icon {
-    margin-right: 10px;
+    margin-right: 1vw;
     display: flex;
     position: absolute;
-    right: 10px;
+    right: 5vw;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1002;
   }
 
+  /* Additional Styles for the Slide-Out Menu */
   .navbar-links {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100vw; /* Initially hidden outside the viewport */
+    height: 100vh;
+    width: 100vw; /* Width of the slide-out menu */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: right 0.3s ease; /* Smooth slide effect */
+    z-index: 1001; /* Above the main navbar */
+    padding-top: 10vh; /* Space from the top for better visibility */
+    padding-right: 5vw;
   }
 
   .navbar-links.open {
-    display: flex;
+    right: 0; /* Slide into the viewport */
+  }
+
+  .navbar-links li {
+    margin: 2vh 0; /* Space between links using vh */
+  }
+
+  .navbar-links a {
+    text-align: right; /* Align text inside links to the right */
+    display: block; /* Make links block elements so text-align works */
+    padding: 0.5vh 2vw; /* Padding for clickable area */
   }
 }
 
