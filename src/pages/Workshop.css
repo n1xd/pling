@@ -170,7 +170,7 @@
 
   @media (max-width: 768px) {
     .workshop-title {
-        padding-top: 6vh;
+        padding-top: 4vh;
         font-size: 7vh; /* Reduce font size for smaller screens */
     }
 
