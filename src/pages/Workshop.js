@@ -88,6 +88,11 @@ const Workshop = () => {
             <p>
             Session 5 highlights the necessity of interdisciplinary expertise for addressing the complexity of LLMs, explores methods from language and cognition sciences to enhance AI safety, and provides strategies for effective interdisciplinary communication and peer review.
             </p>
+
+            <h3>Final Event: <span style={{ color: 'purple' }}>Research Question Incubator</span></h3>
+            <p>
+            Research Question Incubator is designed as a day-long hackathon-style event aimed to bring in participants and mentors of a variety of backgrounds and encourage them to contribute their unique expertise to developm innovation-oriented interdisciplinary research projects that will help communities in Philadelphia and around the world.
+            </p>
           </div>
         </div>
       ),

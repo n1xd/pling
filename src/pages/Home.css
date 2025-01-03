@@ -76,6 +76,17 @@
   line-height: 1; /* Reduce line spacing */
   padding-top: 0vh;
   padding-bottom: 2vh;
+  color: whitesmoke; /* White text color */
+  text-shadow: 
+    -0.1vw -0.1vh 0.2vh #011F5B, /* Inner dark blue shadow with a small blur */
+     0.1vw -0.1vh 0.2vh #011F5B,
+    -0.1vw  0.1vh 0.2vh #011F5B,
+     0.1vw  0.1vh 0.2vh #011F5B,
+    -0.2vw -0.2vh 0.2vh white, /* Outer white shadow with a slightly larger blur */
+     0.2vw -0.2vh 0.2vh white,
+    -0.2vw  0.2vh 0.2vh white,
+     0.2vw  0.2vh 0.2vh white;
+  background: none; /* Optional: Ensure no background interference */
 }
 
 /* Description text styling */

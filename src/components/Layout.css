@@ -2,7 +2,9 @@
 .layout {
   position: relative;
   min-height: 100vh;
-  overflow: hidden; /* Prevent overflow issues */
+  display: flex;
+  flex-direction: column;
+  overflow: visible; /* Allow inner content to scroll */
 }
 
 /* Fixed background styling */
@@ -34,8 +36,11 @@
 .content-container {
   position: relative;
   z-index: 2; /* Above overlay and background */
-  overflow-y: auto; /* Enable scrolling for the content */
+  overflow-y: scroll; /* Ensure scrolling works */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
   min-height: 100vh; /* Ensure content takes up full height */
+  animation: fadeIn 1s ease-in-out;
+  scroll-behavior: smooth; /* Ensures smooth scroll for JS interactions */
 }
 
 /* Hide scrollbars for better UI */
@@ -53,21 +58,26 @@
   }
 }
 
-.content-container {
-  animation: fadeIn 1s ease-in-out;
+/* Ensure body and html allow scrolling */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: visible; /* Ensure scrolling behavior for JS works */
+  scroll-behavior: smooth; /* Allow smooth scrolling via JS */
 }
 
+/* Responsive adjustments for mobile devices */
 @media (max-width: 768px) {
   .fixed-background {
-    height: 50vh; /* Set a percentage of the viewport height */
-    min-height: 500px;
-    width: auto; /* Maintain aspect ratio */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 100vh;
+    width: 100%; /* Ensures it spans the entire width */
+    background-size: cover; /* Maintains full coverage */
+    background-position: center; /* Centers the image */
+    background-attachment: scroll; /* Allows scrolling but keeps it visible */
   }
 }
+
+
 
 
 
