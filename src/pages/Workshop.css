@@ -13,7 +13,6 @@
     background: linear-gradient(to  right, rgb(255, 52, 238), rgb(255, 255, 255)); /* Gradient from bottom-left to top-right */
     -webkit-background-clip: text; /* Clip the gradient to the text (for WebKit browsers) */
     background-clip: text; /* Clip the gradient to the text */
-    text-fill-color: transparent; /* Ensure text is transparent on WebKit browsers */
   }
   
   .workshop-description {
@@ -26,9 +25,123 @@
     background: linear-gradient(to top right, rgb(156, 165, 250), rgb(243, 245, 254)); /* Gradient from bottom-left to top-right */
     -webkit-background-clip: text; /* Clip the gradient to the text (for WebKit browsers) */
     background-clip: text; /* Clip the gradient to the text */
-    text-fill-color: transparent; /* Ensure text is transparent on WebKit browsers */
   }
 
+  .triangle {
+    display: inline-block;
+    font-size: 1.5vh; /* Adjust size */
+    transform: scale(1.5, 1); /* Flatter triangle */
+    vertical-align: middle; /* Aligns with text */
+    margin-left: 0.5vw; /* Adds spacing from text */
+    cursor: pointer;
+}
+
+.session-description-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.session-container.open .session-description-wrapper {
+  grid-template-rows: 1fr; /* Expands dynamically based on content */
+}
+
+.session-description {
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 2vw;
+  transition: opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.session-container.open .session-description {
+  opacity: 1;
+  padding: 1vh 2vw;
+}
+
+
+.speaker-image {
+  width: 15vw; /* Adjust size as needed */
+  height: 15vw; /* Ensures it's a perfect circle */
+  border-radius: 50%; /* Makes it round */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+  display: block;
+  margin: 0 auto 1vh auto; /* Centers the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a soft shadow */
+}
+
+.speakers-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4vh;
+  padding-top: 2vh;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Set initial width */
+  min-height: 10vh; /* Small initial height */
+  height: auto;
+  background: transparent;
+  border-radius: 15px;
+  position: relative;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out, min-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transform: scale(0.95); /* Start smaller */
+  opacity: 0.6;
+}
+
+.speaker-card.zoomed {
+  transform: scale(1); /* Scale up when in center */
+  opacity: 1;
+  height: auto;
+}
+
+.speaker-name {
+  font-size: 2vw; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(to right, #bf01dc, #000000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  width: 100%; /* Ensures full width */
+  display: flex;
+  justify-content: center;
+}
+
+.speaker-institution {
+  font-size: 1.5vw; /* Adjust size as needed */
+  font-weight:lighter;
+  padding-top: 1vh;
+  text-align: center;
+  background: linear-gradient(to right, #bf01dc, #000000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  width: 100%; /* Ensures full width */
+  display: flex;
+  justify-content: center;
+}
+
+.speaker-card .speaker-bio {
+  font-size: 1.2vw;
+  text-align: center;
+  justify-content: center;
+  padding: 1vh 0; /* Adjust vertical spacing */
+  color: transparent; /* Make text transparent to show gradient */
+  background: linear-gradient(to right, #000000, #4b0082); /* Black to dark purple */
+  -webkit-background-clip: text; /* Ensures gradient applies to text */
+  background-clip: text;
+  line-height: 1.5;
+  width: 100%; /* Ensures it takes full width */
+  display: block; /* Explicitly treating it as a block element */
+  margin: 0 auto; /* Centers it properly */
+  transition: opacity 0.5s ease-in-out;
+}
 
   .workshop-nav {
     position: sticky;
@@ -65,6 +178,7 @@
     text-align: center; /* Center text inside buttons */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle outer glow */
     opacity: 0.8;
+
 }
 
 /* Hover effect for buttons */
@@ -87,19 +201,42 @@
     margin: 10vh auto;
     color: #121212;
     max-width: 50vw; /* Limit section width using viewport width */
-    background: rgba(252, 231, 252, 0.9); /* Subtle gradient for depth */
+    background: rgba(252, 231, 252, 0.8); /* Subtle gradient for depth */
     border-radius: 1vw; /* Rounded corners using viewport width */
     box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1), inset 0 0.3vw 0.5vw rgba(255, 255, 255, 0.5); /* Enhanced shadow */
     text-align: center;
     opacity: 0.4;
     height: auto;
-    transition: opacity 0.5s ease-in-out;
+    transition:  0.5s ease-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+    scale: 0.95;
+  }
+
+  .session-title {
+    font-size: 1.5vw; /* Default size */
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .session-title-number{
+    background: linear-gradient(to top right, #bf01dc, #000000);
+  -webkit-background-clip: text; /* Clip gradient to text (for WebKit browsers) */
+  background-clip: text;
+  color: transparent;
+  }
+
+  .session-instructor{
+    font-size: 0.8vw;
+    background: linear-gradient(to left, #000000, #2e2e2e);
+    -webkit-background-clip: text; /* Clip gradient to text (for WebKit browsers) */
+  background-clip: text;
+  color: transparent;
   }
 
   .workshop-section.in-view {
     opacity: 1; /* Brighten when in view */
-    background: rgba(252, 231, 252, 0.9); /* Lighten background */
-    box-shadow: 0 1.5vw 3vw rgba(0, 0, 0, 0.2), inset 0 0.4vw 0.7vw rgba(255, 255, 255, 0.6); /* Enhanced shadow */
+    background: rgba(252, 231, 252, 0.8); /* Lighten background */
+    box-shadow: 0 1.5vw 3vw rgba(0, 0, 0, 0.2), inset 0 0.4vw 0.7vw rgba(255, 255, 255, 0.6);
+    scale: 1;
 }
   
   /* Optional text styling inside the section */
@@ -111,6 +248,10 @@
     -webkit-background-clip: text; /* Clip the gradient to the text (for WebKit browsers) */
     background-clip: text; /* Clip the gradient to the text */
     text-fill-color: transparent; /* Ensure text is transparent on WebKit browsers */
+  }
+
+  .session-instructor {
+    padding-left: 0.5vw;
   }
   
   .workshop-section h3 {
@@ -159,7 +300,7 @@
   .sponsor-logos {
     display: flex;
     justify-content: left;
-    gap: 2vw;
+    gap: 3vw;
     padding-bottom: 3vh;
   }
   
@@ -213,12 +354,96 @@
         border-radius: 5vw;
     }
 
+    .session-instructor {
+      display: none;
+    }
+
     .workshop-section h2 {
         font-size: 3vh; /* Smaller header size */
     }
 
+    .speaker-card {
+      transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out, min-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+      transform: scale(1); /* Start smaller */
+      opacity: 1;
+    }
+    
+    .triangle {
+      font-size: 1.2vh;
+      padding: 0 2vw;
+  }
+
+    .speaker-image {
+      width: 30vw; /* Adjust size as needed */
+      height: 30vw; /* Ensures it's a perfect circle */
+      border-radius: 50%; /* Makes it round */
+      object-fit: cover; /* Ensures the image fills the space without distortion */
+      display: block;
+      margin: 0 auto 1vh auto; /* Centers the image */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a soft shadow */
+    }
+
+    .workshop-section p {
+      font-size: 1.5vh; /* Scale paragraph size with viewport height */
+    }
+    
+    .speaker-card.zoomed {
+      transform: scale(1); /* Scale up when in center */
+      opacity: 1;
+    }
+
+
+    .session-with {
+      display: none;
+    }
+
+    .speaker-name {
+      font-size: 4.5vw; /* Adjust size as needed */
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      background: linear-gradient(to right, #bf01dc, #000000);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      width: 100%; /* Ensures full width */
+      display: flex;
+      justify-content: center;
+    }
+
+    .speaker-institution {
+      font-size: 3vw; /* Adjust size as needed */
+    }
+  
+    
+    .speaker-card .speaker-bio {
+      font-size: 3.5vw;
+      text-align: center;
+      justify-content: center;
+      padding: 1vh 0; /* Adjust vertical spacing */
+      color: transparent; /* Make text transparent to show gradient */
+      background: linear-gradient(to right, #000000, #4b0082); /* Black to dark purple */
+      -webkit-background-clip: text; /* Ensures gradient applies to text */
+      background-clip: text;
+      line-height: 1.5;
+      width: 100%; /* Ensures it takes full width */
+      display: block; /* Explicitly treating it as a block element */
+      margin: 0 auto; /* Centers it properly */
+      transition: opacity 0.5s ease-in-out;
+    }
+
     .sponsor-logo {
         height: 6vh; /* Further reduce logo size for small screens */
+    }
+
+    .session-title {
+      font-size: 3vw; /* Default size */
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    .triangle{
+      size: 7vw;
     }
 
     /* Suppress hover effects for touch devices under 768px */
