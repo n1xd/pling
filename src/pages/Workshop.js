@@ -20,7 +20,7 @@ const speakersData = [
     name: "Ollie Jaffe",
     institution: "OpenAI",
     image: ollie,
-    bio: "Ollie Jaffe works at OpenAI and is researching AI R&D capabilities of frontier models by building some of the hardest evaluations to date. In his free time he enjoys researching deceptive capabilities of frontier models, AI control and AI personhood."
+    bio: "Ollie Jaffe works at OpenAI and is researching AI R&D capabilities of frontier models by building some of the hardest ML engineering evaluations to date. In his free time he enjoys researching deceptive capabilities of frontier models, AI control, and AI personhood. He also enjoys discussing neuroscience and creating antimemes."
   },
   // {
   //   name: "Mikhail Samin",
