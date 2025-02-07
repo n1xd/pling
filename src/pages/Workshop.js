@@ -8,6 +8,7 @@ import presidentsoff from '../assets/sponsors/presidentsofficelogo.webp';
 
 import ccb from '../assets/speakers/ccbpic.jpeg';
 import ollie from '../assets/speakers/ollie.jpg';
+import misha from '../assets/speakers/mishapic.jpg';
 
 const speakersData = [
   {
@@ -22,11 +23,12 @@ const speakersData = [
     image: ollie,
     bio: "Ollie Jaffe works at OpenAI and is researching AI R&D capabilities of frontier models by building some of the hardest ML engineering evaluations to date. In his free time he enjoys researching deceptive capabilities of frontier models, AI control, and AI personhood. He also enjoys discussing neuroscience and creating antimemes."
   },
-  // {
-  //   name: "Mikhail Samin",
-  //   institution: "AI Safety and Governance Institute",
-  //   bio: "Mikhail Samin is the founder of the AI Governance and Safety Institute (AIGSI), an organization dedicated to enhancing institutional responses to existential risks posed by AI. His research focuses on AI governance and improving the understanding of AI risks among stakeholders."
-  // }
+  {
+    name: "Mikhail Samin",
+    institution: "AI Safety and Governance Institute",
+    image: misha,
+    bio: "Mikhail Samin is the executive director of AI Governance and Safety Institute. He works to reduce the risks posed by AI through policy and technical solutions, with a particular focus on the existential risks from future smarter-than-human AI systems. At AIGSI, his work also includes informing stakeholders and the general public about these threats to increase awareness and build support for risk mitigation."
+  }
 ];
 
 const Workshop = () => {
