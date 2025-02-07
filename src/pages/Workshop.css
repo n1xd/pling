@@ -437,13 +437,28 @@
     }
 
     .session-title {
-      font-size: 3vw; /* Default size */
-      font-weight: bold;
-      text-align: left;
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align content */
+      text-align: center; /* Ensure proper text alignment */
     }
   
-    .triangle{
-      size: 7vw;
+    .session-title-number, 
+    .session-topic, 
+    .triangle {
+      display: block; /* Force each element onto a new line */
+      width: auto; /* Ensure full width */
+      text-align: center; /* Center text for clarity */
+      margin-bottom: 0.5vh; /* Add spacing */
+      font-size: 4vw;
+    }
+
+    .session-instructor {
+      display: block; /* Force each element onto a new line */
+      width: 100%; /* Ensure full width */
+      text-align: center; /* Center text for clarity */
+      margin-bottom: 0.5vh; /* Add spacing */
+      font-size: 3vw;
     }
 
     /* Suppress hover effects for touch devices under 768px */
