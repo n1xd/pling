@@ -25,7 +25,7 @@ const speakersData = [
   },
   {
     name: "Mikhail Samin",
-    institution: "AI Safety and Governance Institute",
+    institution: "AI Governance and Safety Institute",
     image: misha,
     bio: "Mikhail Samin is the executive director of AI Governance and Safety Institute. He works to reduce the risks posed by AI through policy and technical solutions, with a particular focus on the existential risks from future smarter-than-human AI systems. At AIGSI, his work also includes informing stakeholders and the general public about these threats to increase awareness and build support for risk mitigation."
   }
