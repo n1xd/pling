@@ -5,6 +5,7 @@ import mindcore from '../assets/sponsors/mindcore.webp';
 import ev from '../assets/sponsors/ev.webp';
 import pennling from '../assets/sponsors/pennling.png';
 import presidentsoff from '../assets/sponsors/presidentsofficelogo.webp';
+import rddsx from '../assets/sponsors/rddsx.png';
 
 import ccb from '../assets/speakers/ccbpic.jpeg';
 import ollie from '../assets/speakers/ollie.jpg';
@@ -177,6 +178,7 @@ const Workshop = () => {
           <img src={pennling} alt="Department of Linguistics" className="sponsor-logo" />
           <img src={mindcore} alt="MindCORE" className="sponsor-logo" />
           <img src={presidentsoff} alt="Office of the President" className="sponsor-logo" />
+          <img src={rddsx} alt="Research Data & Digital Scholarship Exchange" className="sponsor-logo" />
         </div>
       </footer>
     </div>
