@@ -299,13 +299,14 @@
   
   .sponsor-logos {
     display: flex;
-    justify-content: left;
-    gap: 3vw;
-    padding-bottom: 3vh;
+    flex-wrap: wrap; /* Allows wrapping */
+    gap: 3vw; /* Adds space between logos */
+    align-items: center; /* Aligns logos vertically */
+    justify-content: flex-start; /* Aligns items to the left */
   }
   
   .sponsor-logo {
-    height: 10vh;
+    height: 11vh;
     object-fit: contain;
   }
 
