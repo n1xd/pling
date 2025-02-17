@@ -104,7 +104,7 @@ const Workshop = () => {
           <div className="programme-sessions">
             {[ 
               // { title: "Session 1: ", topic: "Can Machines Think?", desc: "Session 1 explores intelligence, biases in traditional definitions, and new perspectives on cognition." },
-              { title: "Session 1: ", topic: "Origins of AI-Generated Language", with: "with Chris Callison-Burch", desc: "Session 1 offers beginner-friendly insights into how LLMs work on the technical level, exposes differences between learning and memorisation, and fosters critical thinking about the relationship between language and computation." },
+              { title: "Session 1: ", topic: "Can Machines Think?", with: "with Chris Callison-Burch", desc: "Session 1 offers beginner-friendly insights into how LLMs work on the technical level, exposes differences between learning and memorisation, zooms in on the notion of agency, and fosters critical thinking about the relationship between language and computation." },
               { title: "Session 2: ", topic: "Capabilities, Common Failures, and (Mis)Alignment", with: "with Ollie Jaffe", desc: "Session 2 introduces the key difficulties in creating aligned LLM systems and agents. In this session, participants get to understand what kinds of problems AI systems find challenging, discuss the consequences of uninterpretable and unexplainable AI, and see why unresolved questions can quickly become rather large-scale problems." },
               { title: "Session 3: ", topic: "Mitigating Risk", with: "with Mikhail Samin", desc: "Session 3 offers insights into various approaches to AI safety (e.g., mech-interp, governance, adversarial testing…), gives participaants the opportunity to see examples of success in AI safety research, and lays out the dilemma of balancing performace and safety of AI systems." },
               // { title: "Session 5: ", topic: "Interdisciplinary Research and Safe AI", desc: "Session 5 highlights the necessity of interdisciplinary expertise for addressing the complexity of LLMs, explores methods from language and cognition sciences to enhance AI safety, and provides strategies for effective interdisciplinary communication and peer review." }
@@ -145,7 +145,20 @@ const Workshop = () => {
         </div>
       ),
     },
-    { id: 'logistics', title: 'Logistics', content: 'Information about dates and times, venues, and other possible workshop materials will be posted in Spring 2025. All our events are held on the campus of the University of Pennsylvania and will conclude with reception and refreshments.' },
+    {
+      id: 'logistics',
+      title: 'Logistics',
+      content: (
+        <p>
+          All sessions will take place at the <strong>RDDS Exchange</strong> (first floor of the Van Pelt Library). 
+          The talks will commence at <strong>3:30 PM</strong> on
+          <strong> February 28</strong> (Can Machines Think?), 
+          <strong> March 21</strong> (Capabilities, Common Failures, and (Mis)Alignment), and 
+          <strong> March 28</strong> (Mitigating Risk). 
+          Following the event, all participants are invited to a reception featuring a rich selection of vegan, kosher, and allergen-friendly refreshments.
+        </p>
+      ),
+    },
     { id: 'registration', title: 'Registration', content: 'Registration for this event will open in Spring 2025. In-person attendence will be limited to the University of Pennsylvania community, but our events will also be open to the general public audience online.' },
   ];
 
