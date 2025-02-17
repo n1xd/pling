@@ -159,7 +159,18 @@ const Workshop = () => {
         </p>
       ),
     },
-    { id: 'registration', title: 'Registration', content: 'Registration for this event will open in Spring 2025. In-person attendence will be limited to the University of Pennsylvania community, but our events will also be open to the general public audience online.' },
+    { id: 'registration',
+      title: 'Registration',
+      content: (
+        <div>
+          <p>
+            For the best experience and enough food, we ask that members of the University of Pennsylvania community intending to join our events register ahead of time. 
+          </p>
+          <a href="https://lu.ma/ab4cnfoa" target="_blank" rel="noopener noreferrer" className="register-button">
+            Register for Session 1 here!
+          </a>
+        </div>
+      ),},
   ];
 
   return (
