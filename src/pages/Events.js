@@ -14,9 +14,9 @@ const Events = () => {
   const upcomingEvents = [
     {
       image: EventImage1,
-      text: 'LLM Workshop',
-      date: 'details coming soon',
-      signup: require('../assets/events/thenewmind.png'),
+      text: 'Can Machines Think?',
+      date: 'Feb 28 2025',
+      signup: 'https://lu.ma/event/manage/evt-UwuSiiPa4oKCNWj',
     },
     {
       image: tea,
