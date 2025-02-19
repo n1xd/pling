@@ -50,7 +50,7 @@ const Contact = () => {
   <p>{'\u2764'} what we do? Join the party!</p>
 
   {/* Membership Button */}
-  <a href="https://forms.gle/9oaWfkkYMZ4k6yFh6" className="apply-button">Sign Up for Membership</a>
+  <a href="https://forms.gle/9oaWfkkYMZ4k6yFh6" className="apply-button">Sign Up for Updates</a>
 </div>
 </Layout>
     );
