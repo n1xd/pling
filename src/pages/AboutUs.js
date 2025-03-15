@@ -16,7 +16,7 @@ const AboutUs = () => {
         <section className="section about">
           <h1>About Us</h1>
           <p className="centered-paragraph">
-            We are a community of students at the University of Pennsylvania interested in all things language: from formal theory and experimental methods to topics in NLP, the origins and future of language, social implications of linguistic choices, and everything in between. We unite young researchers and language enthusiasts — undergraduate, graduate, and professional alike — from diverse backgrounds around the globe. Many of us are linguists in training, but our events are open to anyone interested in exploring the patterns of the languages they speak and learning all about those they don’t!
+            We are a community of students at the University of Pennsylvania interested in all things language: from formal theory and experimental methods to topics in NLP, the origins and future of language, social implications of linguistic choices, and everything in between. We unite young researchers and language enthusiasts—undergraduate, graduate, and professional alike—from diverse backgrounds around the globe. Many of us are linguists in training, but our events are open to anyone interested in exploring the patterns of the languages they speak and learning all about those they don’t!
           </p>
         </section>
 

@@ -50,7 +50,7 @@ body {
 }
 
 .about p {
-  font-size: 1.5vw;
+  font-size: 2.5vh;
   text-align: justify; /* Justify the text */
   max-width: 800px; /* Set a maximum width for the paragraph */
   margin: 0 auto; /* Center the paragraph block */
@@ -75,7 +75,6 @@ body {
   flex-direction: column; /* Stack the image and text vertically */
   align-items: center;
   margin-bottom: 2vh;
-  font-size: 1.5vw;
   text-align: center; /* Center-align text for a better look */
   background: linear-gradient(to right, white, lightblue); /* Gradient colors */
   -webkit-background-clip: text;
@@ -111,7 +110,6 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 2vh;
-  font-size: 1.5vw;
 }
 
 .alumni-container {
@@ -152,7 +150,7 @@ body {
 }
 
 .student-voice {
-  font-size: 1.4vw;
+  font-size: 2.5vh;
   margin: 0; /* Remove default margin */
   width: 40vw;
   text-align: justify; /* Justify the text evenly */
@@ -176,7 +174,7 @@ body {
   }
 
   .about p{
-    font-size: 3.5vw; /* Increase font size for better readability */
+    font-size: 3vh; /* Increase font size for better readability */
     width: 80vw; /* Make paragraphs wider */
     margin: 0 auto; /* Center the paragraphs */
     padding-bottom: 0vw;

@@ -166,9 +166,14 @@ const Workshop = () => {
           <p>
             For the best experience and enough food, we ask that members of the University of Pennsylvania community intending to join our events register ahead of time. 
           </p>
-          <a href="https://lu.ma/ab4cnfoa" target="_blank" rel="noopener noreferrer" className="register-button">
-            Register for Session 1 here!
+          <div class="button-container">
+          <a className="register-button first-button" target="_blank" rel="noopener noreferrer">
+            Register for Session 1 here! [passed]
           </a>
+          <a href="https://lu.ma/11ns1st3" target="_blank" rel="noopener noreferrer" className="register-button">
+            Register for Session 2 here!
+          </a>
+          </div>
         </div>
       ),},
   ];

@@ -305,10 +305,18 @@
     justify-content: flex-start; /* Aligns items to the left */
   }
 
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Ensures buttons stack vertically */
+    align-items: center; /* Centers buttons horizontally */
+    gap: 10px; /* Adds space between buttons */
+}
+
   .register-button {
     display: inline-block;
-    margin-top: 5vh;
-    padding: 10px 20px;
+    margin-top: 3vh;
+    width: 25vw;
+    padding: 2vh 2vw;
     background-color: #77047b;
     color: white;
     text-decoration: none;
@@ -317,6 +325,13 @@
     text-align: center;
     transition: background-color 0.3s ease;
   }
+
+  .first-button {
+    pointer-events: none;  /* Disables clicking */
+    opacity: 0.5;
+    background-color:   #331f34;        /* Makes it look faded */
+    cursor: not-allowed;   /* Shows a "disabled" cursor */
+}
   
   .register-button:hover {
     background-color: #000000;

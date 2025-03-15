@@ -38,7 +38,7 @@ h2 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 3vh;
   width: 65%;
   margin: 0 auto;
   scroll-snap-align: start; /* Snap each paragraph */
