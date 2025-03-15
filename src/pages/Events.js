@@ -3,6 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import EventImage1 from '../assets/events/ai.webp';
 import EventImage2 from '../assets/events/behind-the-curtain.webp';
 import EventImage3 from '../assets/events/culture-fair.webp';
+import EventImage4 from '../assets/events/gdm.jpg';
 import tea from '../assets/events/reading-and-tea.webp';
 import lightning from '../assets/events/lightning-talks.webp';
 import hottakes from '../assets/events/hot-takes-pic.webp';
@@ -13,10 +14,10 @@ import './Events.css';
 const Events = () => {
   const upcomingEvents = [
     {
-      image: EventImage1,
-      text: 'Can Machines Think?',
-      date: 'Feb 28 2025',
-      signup: 'https://lu.ma/event/manage/evt-UwuSiiPa4oKCNWj',
+      image: EventImage4,
+      text: 'Capabilities, Common Failures, and (Mis)Alignment',
+      date: 'Mar 21 2025',
+      signup: 'https://lu.ma/11ns1st3',
     },
     {
       image: tea,
@@ -36,6 +37,12 @@ const Events = () => {
   ];
 
   const pastEvents = [
+    {
+      image: EventImage1,
+      text: 'Can Machines Think?',
+      date: 'Feb 28 2025',
+      signup: 'https://lu.ma/ab4cnfoa',
+    },
     {
       image: mic,
       text: 'Lightning Talks',
