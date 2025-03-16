@@ -354,7 +354,11 @@
     .research-incubator-footer p {
         font-size: 1.8vh;
         text-align: center;
-        padding-bottom: 3vh;
+        margin: 0 auto; /* Centers the paragraph horizontally */
+        display: flex;
+        align-items: center; /* Aligns vertically if inside a flex container */
+        justify-content: center; /* Centers text inside the flex container */
+        height: 100%; /* Ensure it takes up full height */
     }
 
     .prizes-list li {
