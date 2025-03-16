@@ -70,7 +70,7 @@ const MainContent = () => {
         return { backgroundImage: ContactBackground };
       case '/workshop':
         return { backgroundImage: wsbg };
-      case '/aiforgood':
+      case '/ai4good':
         return { backgroundImage: wsbg };
       default:
         return { backgroundColor: '#000000' }; // Default for Home
@@ -88,7 +88,7 @@ const MainContent = () => {
           <Route path="/events" element={<Events />} />
           {/* <Route path="/board" element={<Board />} /> */}
           <Route path="/workshop" element={<Workshop />} />
-          <Route path="/aiforgood" element={<AiforGood />} />
+          <Route path="/ai4good" element={<AiforGood />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>
