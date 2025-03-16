@@ -274,17 +274,30 @@
 /****** MOBILE RESPONSIVENESS ******/
 @media (max-width: 768px) {
     .research-incubator-title {
-        font-size: 7vh;
         padding-top: 4vh;
     }
 
+    .title-line1 {
+        display: block; /* Forces line break */
+        font-size: 15vw; /* Adjust size */
+        font-weight: bold;
+    }
+    
+    .title-line2 {
+        display: block; /* Forces line break */
+        font-size: 8vw; /* Slightly smaller */
+    }
+    
     .research-incubator-description {
-        font-size: 2vh;
+        font-size: 3.5vw;
         padding: 2vh 2vw;
+        text-align: justify;
     }
 
     .research-incubator-buttons {
         gap: 1.5vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .research-incubator-buttons button {
@@ -294,16 +307,26 @@
         height: auto;
     }
 
+
     .research-incubator-section {
         max-width: 90%;
         padding-bottom: 5vh;
         margin: 5vh 2vw;
         border-radius: 5vw;
+        
+    }
+
+    .research-incubator-section p {
+        font-size: 3.5vw;
     }
 
     .research-incubator-section h2 {
         font-size: 3vh;
     }
+
+    .timetable table {
+        width: 100%;
+      }
 
     .timetable td, .timetable th {
         font-size: 1.5vh;
@@ -332,6 +355,24 @@
         font-size: 1.8vh;
         text-align: center;
         padding-bottom: 3vh;
+    }
+
+    .prizes-list li {
+        font-size: 3.5vw; /* Adjusts text size for better readability */
+    }
+
+    .inc-register-button {
+        display: inline-block;
+        margin-top: 3vh;
+        width: 50vw;
+        padding: 2vh 2vw;
+        background-color: #04575d;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s ease;
     }
 }
 
