@@ -184,7 +184,7 @@ const AiforGood = () => {
       ))}
       <footer className="research-incubator-footer">
         <h3>Partners</h3>
-        <p>We are grateful for the support of our sponsors.</p>
+        <p>This project was supported by the dedication of our sponsors, whom we thank for their support.</p>
         <div className="sponsor-logos">
           <img src={ev} alt="Effective Ventures" className="sponsor-logo" />
           <img src={pennling} alt="Department of Linguistics" className="sponsor-logo" />
