@@ -6,15 +6,17 @@ import ErrorBoundary from './components/ErrorBoundary';
 import './App.css';
 
 // Import images
-import AboutUsBackground from './assets/intros/about-us-pic.webp';
+import AboutUsBackground from './assets/intros/about-us-pic.jpg';
 import BoardBackground from './assets/intros/boardpic.webp';
 import ContactBackground from './assets/intros/contact-pic.webp';
 import EventsBackground from './assets/intros/eventsbg.webp';
 import wsbg from './assets/intros/wsbg.webp';
+import AiforGood from './pages/AiforGood';
 
 const AboutUs = lazy(() => import('./pages/AboutUs'));
 const Events = lazy(() => import('./pages/Events'));
-const Board = lazy(() => import('./pages/Board'));
+// const Board = lazy(() => import('./pages/Board'));
+const Ideathon = lazy(() => import('./pages/AiforGood'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Home = lazy(() => import('./pages/Home'));
 const Workshop = lazy(() => import('./pages/Workshop'));
@@ -62,11 +64,13 @@ const MainContent = () => {
         return { backgroundImage: AboutUsBackground};
       case '/events':
         return { backgroundImage: EventsBackground };
-      case '/board':
-        return { backgroundImage: BoardBackground };
+      // case '/board':
+      //   return { backgroundImage: BoardBackground };
       case '/contact':
         return { backgroundImage: ContactBackground };
       case '/workshop':
+        return { backgroundImage: wsbg };
+      case '/aiforgood':
         return { backgroundImage: wsbg };
       default:
         return { backgroundColor: '#000000' }; // Default for Home
@@ -82,8 +86,9 @@ const MainContent = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/board" element={<Board />} />
+          {/* <Route path="/board" element={<Board />} /> */}
           <Route path="/workshop" element={<Workshop />} />
+          <Route path="/aiforgood" element={<AiforGood />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>

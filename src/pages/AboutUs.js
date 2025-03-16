@@ -10,7 +10,7 @@ import BulletIcon4 from '../assets/icons/network.webp';
 
 const AboutUs = () => {
   return (
-    <Layout backgroundImage={require('../assets/intros/about-us-pic.webp')}>
+    <Layout backgroundImage={require('../assets/intros/about-us-pic.jpg')}>
       <div className="about-us">
         {/* Section: About */}
         <section className="section about">

@@ -146,7 +146,7 @@
   .workshop-nav {
     position: sticky;
     top: 0;
-    background-color: rgba(92, 0, 92, 0.505); /* Dark purple background */
+    background-color: rgba(92, 0, 92, 0.35); /* Dark purple background */
     display: flex;
     flex-direction: column; /* Stack the header, description, and buttons vertically */
     align-items: center;
@@ -169,12 +169,12 @@
     border-radius: 2vw; /* More rounded for a modern look */
     font-family: 'Montserrat', sans-serif;
     padding: 1.5vh 2.5vw; /* Adjusted padding for balance */
-    font-size: 4vh; /* Slightly smaller font for readability */
+    font-size: 3.5vh; /* Slightly smaller font for readability */
     color: white; /* White text color */
     cursor: pointer;
     transition: all 0.3s ease; /* Smooth transitions for all properties */
     width: 18vw; /* Adjusted width for better spacing */
-    height: 15vh; /* Remove fixed height, adjust based on padding */
+    height: 10vh; /* Remove fixed height, adjust based on padding */
     text-align: center; /* Center text inside buttons */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle outer glow */
     opacity: 0.8;

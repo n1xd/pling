@@ -1,0 +1,337 @@
+/****** HEADER SECTION ******/
+.research-incubator-header {
+    text-align: center;
+    margin-bottom: 2vh;
+    padding: 2vh 0;
+}
+
+/* Main Title */
+.research-incubator-title {
+    font-size: 10vh;
+    text-align: center;
+    margin-bottom: 1vh;
+    padding-top: 10vh;
+    color: transparent;
+    background: linear-gradient(to right, #00bcd4, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: flex;
+    flex-direction: column;  /* Forces text to stack */
+    line-height: 1.2; /* Adjust spacing */
+}
+
+.title-line1 {
+    display: block; /* Forces line break */
+    font-size: 14vh; /* Adjust size */
+    font-weight: bold;
+}
+
+.title-line2 {
+    display: block; /* Forces line break */
+    font-size: 7vh; /* Slightly smaller */
+}
+
+.white-text {
+    color: white;
+  }
+
+/* Subtitle / Description */
+.research-incubator-description {
+    font-size: 1.2vw;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3vh 3vw;
+    color: transparent;
+    background: linear-gradient(to right, #80deea, #e0f7fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/****** NAVIGATION BAR ******/
+.research-incubator-nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 128, 128, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh 0;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Container */
+.research-incubator-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3vw; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap buttons on smaller screens */
+}
+
+/* Buttons */
+.research-incubator-buttons button {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    border: 0.15vw solid rgba(255, 255, 255, 0.7); /* Slightly transparent white border */
+    border-radius: 2vw; /* More rounded for a modern look */
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.5vh 2.5vw; /* Adjusted padding for balance */
+    font-size: 1.5vw; /* Slightly smaller font for readability */
+    color: white; /* White text color */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions for all properties */
+    width: 15vw; /* Adjusted width for better spacing */
+    height: 10vh; /* Remove fixed height, adjust based on padding */
+    text-align: center; /* Center text inside buttons */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle outer glow */
+    opacity: 0.8;
+}
+
+/* Button Hover Effect */
+.research-incubator-buttons button:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/****** SECTIONS ******/
+.research-incubator-section {
+    padding: 5vh 5vw;
+    margin: 10vh auto;
+    color: #121212;
+    max-width: 50vw;
+    background: rgba(224, 247, 250, 0.8);
+    border-radius: 1vw;
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0.5;
+    transition: all 0.5s ease-out;
+    transform: scale(0.95);
+}
+
+.research-incubator-section.in-view {
+    opacity: 1;
+    background: rgba(224, 247, 250, 0.9);
+    box-shadow: 0 1.5vw 3vw rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+}
+
+/* Section Titles */
+.research-incubator-section h2 {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: transparent;
+    background: linear-gradient(to right, #00bcd4, #006064);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Section Paragraphs */
+.research-incubator-section p {
+    font-size: 2vh;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0vh 2vw;
+    margin: 0;
+    width: auto;
+}
+
+.programme-container {
+    display: flex;
+    flex-direction: column; /* Ensures stacking */
+    align-items: center; /* Centers content */
+    width: 100%;
+  }
+
+/* Table Container */
+.timetable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+  
+  /* Table */
+  .timetable table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 1vh;
+    background: #e0f7fa; /* Light turquoise background */
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Table Headers */
+  .timetable th {
+    background: #101211; /* Dark turquoise header */
+    color: white;
+    padding: 1vw;
+    text-align: left;
+    font-size: 1.5vw;
+  }
+  
+  /* Table Rows */
+  .timetable td {
+    padding: 1vw;
+    font-size: 1vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Alternate Row Coloring */
+  .timetable tbody tr:nth-child(even) {
+    background: #f1fcfc; /* Soft cyan background */
+  }
+  
+  /* Remove border from last row */
+  .timetable tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .prizes-container {
+    text-align: left; /* Ensures text aligns left */
+    margin: 0 auto; /* Centers the section while keeping text left-aligned */
+}
+
+.prizes-list {
+    list-style-type: disc; /* Standard bullet points */
+    padding-left: 5vw; /* Adds indentation for bullets */
+    text-align: left; /* Ensures list items align left */
+}
+
+.prizes-list li {
+    margin-bottom: 10px; /* Adds spacing between items for readability */
+    font-size: 2vh; /* Adjusts text size for better readability */
+}
+
+/****** REGISTRATION BUTTON ******/
+.inc-register-button {
+    display: inline-block;
+    margin-top: 3vh;
+    width: 20vw;
+    padding: 2vh 2vw;
+    background-color: #04575d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.inc-register-button:hover {
+    background-color: #032e31;
+}
+
+/****** JUDGES SECTION ******/
+.judges-announcement {
+    font-size: 2.5vh;
+    color: #004d40;
+    text-align: center;
+    font-weight: bold;
+}
+
+/****** FOOTER ******/
+.research-incubator-footer {
+    background-color: white;
+    padding: 3vh 3vw;
+    text-align: left;
+    border-top: 1px solid #ccc;
+}
+
+/* Footer Title */
+.research-incubator-footer h3 {
+    font-size: 3vh;
+    color: #333;
+}
+
+/* Footer Paragraph */
+.research-incubator-footer p {
+    font-size: 2vh;
+    color: #555;
+    text-align: left;
+    padding-bottom: 5vh;
+    margin: 0 0;
+}
+
+/****** SPONSORS ******/
+.sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Sponsor Logos */
+.sponsor-logo {
+    height: 11vh;
+    object-fit: contain;
+}
+
+/****** MOBILE RESPONSIVENESS ******/
+@media (max-width: 768px) {
+    .research-incubator-title {
+        font-size: 7vh;
+        padding-top: 4vh;
+    }
+
+    .research-incubator-description {
+        font-size: 2vh;
+        padding: 2vh 2vw;
+    }
+
+    .research-incubator-buttons {
+        gap: 1.5vh;
+    }
+
+    .research-incubator-buttons button {
+        border-radius: 5vw;
+        font-size: 2.5vh;
+        width: 40vw;
+        height: auto;
+    }
+
+    .research-incubator-section {
+        max-width: 90%;
+        padding-bottom: 5vh;
+        margin: 5vh 2vw;
+        border-radius: 5vw;
+    }
+
+    .research-incubator-section h2 {
+        font-size: 3vh;
+    }
+
+    .timetable td, .timetable th {
+        font-size: 1.5vh;
+    }
+
+    .register-button {
+        width: 40vw;
+    }
+
+    .sponsor-logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .sponsor-logo {
+        height: 7vh;
+    }
+
+    .research-incubator-footer h3 {
+        font-size: 2.5vh;
+        text-align: center;
+    }
+
+    .research-incubator-footer p {
+        font-size: 1.8vh;
+        text-align: center;
+        padding-bottom: 3vh;
+    }
+}
+
