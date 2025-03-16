@@ -7,7 +7,7 @@ import './App.css';
 
 // Import images
 import AboutUsBackground from './assets/intros/about-us-pic.jpg';
-import BoardBackground from './assets/intros/boardpic.webp';
+// import BoardBackground from './assets/intros/boardpic.webp';
 import ContactBackground from './assets/intros/contact-pic.webp';
 import EventsBackground from './assets/intros/eventsbg.webp';
 import wsbg from './assets/intros/wsbg.webp';
@@ -16,7 +16,7 @@ import AiforGood from './pages/AiforGood';
 const AboutUs = lazy(() => import('./pages/AboutUs'));
 const Events = lazy(() => import('./pages/Events'));
 // const Board = lazy(() => import('./pages/Board'));
-const Ideathon = lazy(() => import('./pages/AiforGood'));
+// const Ideathon = lazy(() => import('./pages/AiforGood'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Home = lazy(() => import('./pages/Home'));
 const Workshop = lazy(() => import('./pages/Workshop'));
