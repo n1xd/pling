@@ -327,9 +327,18 @@
   }
 
   .first-button {
-    pointer-events: none;  /* Disables clicking */
+    display: inline-block;
+    margin-top: 3vh;
+    width: 25vw;
+    padding: 2vh 2vw;
+    background-color: #390a3b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
     opacity: 0.5;
-    background-color:   #331f34;        /* Makes it look faded */
     cursor: not-allowed;   /* Shows a "disabled" cursor */
 }
   
@@ -492,6 +501,10 @@
       text-align: center; /* Center text for clarity */
       margin-bottom: 0.5vh; /* Add spacing */
       font-size: 3vw;
+    }
+
+    .register-button {
+      width: 70vw;
     }
 
     /* Suppress hover effects for touch devices under 768px */
