@@ -144,7 +144,7 @@ const AiforGood = () => {
       content: (
         <div>
           <p>
-          Registration is required to participate in AI4Good. You can sign up as an individual or register a team. For team registrations, we only allow up to 4 team members, leaving space for an additional researcher matched before or during the event to promote the interdisciplinary nature of projects. Teams larger than 5 members will not be permitted.
+          Registration is required to participate in AI4Good. You can sign up as an individual or register a team. For team registrations, we only allow up to 3 team members, leaving space for an additional researcher matched during the event to promote the interdisciplinary nature of projects. Teams larger than 4 members will not be permitted to compete.
           </p>
           <a href="https://forms.gle/hURpKmt6K8RtAz9K8" target="_blank" rel="noopener noreferrer" className="inc-register-button">
             Register Here!
