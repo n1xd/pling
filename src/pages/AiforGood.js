@@ -6,6 +6,10 @@ import ev from '../assets/sponsors/ev.webp';
 import pennling from '../assets/sponsors/pennling.png';
 import presidentsoff from '../assets/sponsors/presidentsofficelogo.webp';
 import rddsx from '../assets/sponsors/rddsx.png';
+import bestpitch from '../assets/prizes/bestpitch.jpeg';
+import bestproject from '../assets/prizes/bestproject.jpeg';
+import bestcommunityproject from '../assets/prizes/bestcommunityproject.jpeg';
+import fourLogo from '../assets/icons/4logothin.png';
 
 const AiforGood = () => {
   const sections = useRef([]);
@@ -124,20 +128,49 @@ const AiforGood = () => {
       ),
     },
     {
-        id: 'prizes',
-        title: 'Prizes',
-        content: (
-          <div className="prizes-container">
-            <p>Exciting prizes await the top-performing teams and participants! AI4Good will award prizes for the following:</p>
-            <ul className="prizes-list">
-              <li><strong>💡 Best Overall Project</strong>: awarded for a research project that demonstrates excellence across all criteria, including computational rigor, interdisciplinarity, feasibility, and societal impact.</li>
-              <li><strong>🌱 Best Community-Oriented Project</strong>: awarded for a research project that most effectively explores AI's role in addressing a specific community's needs, circumstances, or challenges, with a strong focus on social relevance and impact.</li>
-              <li><strong>🎤 Best Pitch</strong>: awarded to a student or faculty with the most compelling and well-articulated research idea, demonstrating clarity, depth, and the potential to advance research on social impacts of AI or AI safety.</li>
-            </ul>
-            <p>Projects will be assessed on <strong>computational accuracy</strong>, promise of <strong>social impact</strong>, <strong>feasibility & scaleability</strong>, and the degree of <strong>interdisciplinary perspective</strong>. Specific prizes will be announced closer to the event. More awards may be announced before or during the event!</p>
+      id: 'prizes',
+      title: 'Prizes',
+      content: (
+        <div className="prizes-container">
+          <p className="prizes-description">
+            Exciting prizes await the top-performing teams and participants! AI4Good will award prizes for the following categories:
+          </p>
+          <div className="prize-item">
+            <h3>🎤 Best Pitch</h3>
+            <p>Awarded to a student or faculty with the most compelling and well-articulated research idea, demonstrating clarity, depth, and the potential to advance research on social impacts of AI or AI safety.</p>
+            <figure className="prize-figure">
+            <div className="prize-image-container">
+                <img src={bestpitch} alt="Best Pitch" className="prize-image" />
+            </div>
+            <figcaption className="prize-caption"><strong>iPad 10th Generation</strong><br />11-inch Wi-Fi 128GB Silver</figcaption>
+          </figure>
           </div>
-        ),
-      },
+          <div className="prize-item">
+            <h3>💡 Best Overall Project</h3>
+            <p>Awarded for a research project that demonstrates excellence across all criteria, including computational rigor, interdisciplinarity, feasibility, and societal impact.</p>
+            <figure className="prize-figure">
+            <div className="prize-image-container">
+            <img src={bestproject} alt="Best Project" className="prize-image" />
+            </div>
+            <figcaption className="prize-caption"><strong>Apple Watch SE</strong><br />GPS 40mm Midnight Aluminum Case with Ink Sport Loop</figcaption>
+          </figure>
+          </div>
+          <div className="prize-item">
+            <h3>🌱 Best Community-Oriented Project</h3>
+            <p>Awarded for a research project that most effectively explores AI's role in addressing a specific community's needs, circumstances, or challenges, with a strong focus on social relevance and impact.</p>
+            <figure className="prize-figure">
+            <div className="prize-image-container">
+            <img src={bestcommunityproject} alt="Best Community-Oriented Project" className="prize-image" />
+            </div>
+            <figcaption className="prize-caption"><strong>AirPods 4</strong><br/> with Active Noise Cancellation	</figcaption>
+          </figure>
+          </div>
+          <p className="assessment-criteria">
+            Projects will be assessed on <strong>computational accuracy</strong>, promise of <strong>social impact</strong>, feasibility & scalability, and the degree of <strong>interdisciplinary perspective</strong>.
+          </p>
+        </div>
+      ),
+    },
     {
       id: 'registration',
       title: 'Registration',
@@ -160,7 +193,7 @@ const AiforGood = () => {
         <div className="research-incubator-header">
         <h1 className="research-incubator-title">
         <span className="title-line1">
-    AI<span className="white-text">4</span>GOOD
+    AI<img src={fourLogo} alt="4" className="logo-4" />GOOD
   </span>
   <span className="title-line2">Research Incubator</span>
 </h1>

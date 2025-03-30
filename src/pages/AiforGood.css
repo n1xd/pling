@@ -5,6 +5,64 @@
     padding: 2vh 0;
 }
 
+/****** PRIZES SECTION ******/
+.prizes-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.prizes-description {
+    font-size: 2vh;
+    margin-bottom: 1.5vh;
+}
+
+.prize-item {
+    margin: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prize-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  .prize-image-container {
+    width: 30vh;
+    height: 30vh;
+    background-color: white; /* Ensures a white background */
+    border-radius: 50%; /* Makes the entire container circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 5vh solid white; /* Optional border for clean look */
+    overflow: hidden; /* Ensures content stays inside the circle */
+}
+
+.prize-image {
+    width: 80%; /* Make the image fill the container */
+    height: 80%; /* Make the image fill the container */
+    object-fit: cover; /* Ensures the image covers the entire circular area */
+    background-color: white; /* Fills any transparent space with white */
+}
+
+  
+  .prize-caption {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+
+.assessment-criteria {
+    margin-top: 2vh;
+    font-size: 1.8vh;
+    color: #555;
+}
+
 /* Main Title */
 .research-incubator-title {
     font-size: 10vh;
@@ -123,6 +181,12 @@
     background: linear-gradient(to right, #00bcd4, #006064);
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.logo-4 {
+    height: 1.3em; /* matches text height */
+    vertical-align: middle;
+    margin: 0 0; /* optional spacing */
 }
 
 /* Section Paragraphs */
@@ -377,6 +441,18 @@
         border-radius: 5px;
         text-align: center;
         transition: background-color 0.3s ease;
+    }
+    .prize-image-container {
+        width: 30vw;
+        height: 30vw;
+        background-color: white; /* Ensures a white background */
+        border-radius: 50%; /* Makes the entire container circular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        border: 5vh solid white; /* Optional border for clean look */
+        overflow: hidden; /* Ensures content stays inside the circle */
     }
 }
 
