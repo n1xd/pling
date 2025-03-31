@@ -166,7 +166,7 @@ const AiforGood = () => {
           </figure>
           </div>
           <p className="assessment-criteria">
-            Projects will be assessed on <strong>computational accuracy</strong>, promise of <strong>social impact</strong>, feasibility & scalability, and the degree of <strong>interdisciplinary perspective</strong>.
+          To qualify for the above awards, projects must be original and significantly developed during the event. Projects will be assessed on <strong>computational accuracy</strong>, promise of <strong>social impact</strong>, <strong>feasibility & scalability</strong>, and the degree of <strong>interdisciplinary perspective</strong>. While we understand you might need to step out now and then, only researchers who participate in all key sessions will be connsidered.
           </p>
         </div>
       ),
@@ -177,7 +177,7 @@ const AiforGood = () => {
       content: (
         <div>
           <p>
-          Registration is required to participate in AI4Good. You can sign up as an individual or register a team. For team registrations, we only allow up to 3 team members, leaving space for an additional researcher matched during the event to promote the interdisciplinary nature of projects. Teams larger than 4 members will not be permitted to compete.
+          Registration is required to participate in AI4Good. While pre-existing teams are encouraged to apply, all team members must submit their own registration form. Competing teams must span across at least two academic departments. (If your team doesn't satisfy this requirement, you'll be able to find more highly qualified team members at the event!) Teams larger than 4 members will not be permitted to compete.
           </p>
           <a href="https://forms.gle/hURpKmt6K8RtAz9K8" target="_blank" rel="noopener noreferrer" className="inc-register-button">
             Register Here!

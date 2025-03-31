@@ -23,6 +23,10 @@
     align-items: center;
 }
 
+.research-incubator-section .prize-item p {
+    text-align: center;
+}
+
 .prize-figure {
     display: flex;
     flex-direction: column;
@@ -259,16 +263,6 @@
     margin: 0 auto; /* Centers the section while keeping text left-aligned */
 }
 
-.prizes-list {
-    list-style-type: disc; /* Standard bullet points */
-    padding-left: 5vw; /* Adds indentation for bullets */
-    text-align: left; /* Ensures list items align left */
-}
-
-.prizes-list li {
-    margin-bottom: 10px; /* Adds spacing between items for readability */
-    font-size: 2vh; /* Adjusts text size for better readability */
-}
 
 /****** REGISTRATION BUTTON ******/
 .inc-register-button {
@@ -423,10 +417,6 @@
         align-items: center; /* Aligns vertically if inside a flex container */
         justify-content: center; /* Centers text inside the flex container */
         height: 100%; /* Ensure it takes up full height */
-    }
-
-    .prizes-list li {
-        font-size: 3.5vw; /* Adjusts text size for better readability */
     }
 
     .inc-register-button {
