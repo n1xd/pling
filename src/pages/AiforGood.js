@@ -54,24 +54,25 @@ const AiforGood = () => {
         title: 'Programme',
         content: (
           <div className="programme-container">
+            <p>We only ask that participants gather in the Ben Franklin Room for key agenda points (bolded) throughout the day to be eligible for all our exciting prizes. Otherwise, for most of the day, participants can freely collaborate around the Houston Hall or elsewhere on campus.</p>
             <div className="timetable">
               <table>
                 <tbody>
                   <tr>
-                    <td>9.00 AM</td>
-                    <td>Registration</td>
-                  </tr>
-                  <tr>
-                    <td>9.30 AM</td>
-                    <td>Welcome, Icebreakers, & Expectation-Setting</td>
-                  </tr>
-                  <tr>
                     <td>10.00 AM</td>
-                    <td>Meet the Judges</td>
+                    <td><strong>Registration</strong></td>
                   </tr>
                   <tr>
                     <td>10.30 AM</td>
-                    <td>Pitches & Team-Forming</td>
+                    <td><strong>Welcome, Icebreakers, & Expectation-Setting</strong></td>
+                  </tr>
+                  <tr>
+                    <td>10.45 AM</td>
+                    <td><strong>Meet the Judges</strong></td>
+                  </tr>
+                  <tr>
+                    <td>11.00 AM</td>
+                    <td><strong>Pitches & Team-Forming</strong></td>
                   </tr>
                   <tr>
                     <td>12.00 PM</td>
@@ -87,7 +88,7 @@ const AiforGood = () => {
                   </tr>
                   <tr>
                     <td>5.00 PM</td>
-                    <td>Final Presentations</td>
+                    <td><strong>Final Presentations</strong></td>
                   </tr>
                   <tr>
                     <td>6.00 PM</td>
@@ -95,7 +96,7 @@ const AiforGood = () => {
                   </tr>
                   <tr>
                     <td>7.00 PM</td>
-                    <td>Judging & Awards</td>
+                    <td><strong>Judging & Awards</strong></td>
                   </tr>
                 </tbody>
               </table>
@@ -121,8 +122,8 @@ const AiforGood = () => {
       title: 'Logistics',
       content: (
         <p>
-          The AI4Good Research Incubator will take place in the <strong>Ben Franklin Room</strong> (Houston Hall). 
-          The registration will begin at <strong>9.00 AM</strong> on <strong>April 19</strong> and the final decisions will be announced before <strong>8.00 PM</strong>. 
+          All key sessions of the AI4Good Research Incubator will take place in the <strong>Ben Franklin Room, Houston Hall</strong>.
+          The registration will begin at <strong>10.00 AM</strong> on <strong>April 19, 2025,</strong> and the final decisions will be announced before <strong>7.30 PM</strong>. 
           Participants are invited to a networking reception after the event concludes.
         </p>
       ),

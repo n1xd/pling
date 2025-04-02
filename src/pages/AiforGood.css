@@ -217,7 +217,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 2vh;
+    margin: 2vh 0;
   }
   
   /* Table */
