@@ -122,7 +122,7 @@ const AiforGood = () => {
       title: 'Logistics',
       content: (
         <p>
-          All key sessions of the AI4Good Research Incubator will take place in the <strong>Ben Franklin Room, Houston Hall</strong>.
+          All key sessions of the AI4Good Research Incubator will take place in the <strong>Ben Franklin Room, Houston Hall</strong>. This is also where we wills <strong>serve lunch</strong> and make <strong>snacks and beverages</strong> available for all registered participants anytime throughout the day.
           The registration will begin at <strong>10.00 AM</strong> on <strong>April 19, 2025,</strong> and the final decisions will be announced before <strong>7.30 PM</strong>. 
           Participants are invited to a networking reception after the event concludes.
         </p>
@@ -199,8 +199,7 @@ const AiforGood = () => {
   <span className="title-line2">Research Incubator</span>
 </h1>
           <p className="research-incubator-description">
-          Imagine a world where AI is not only powerful but ethically sound and socially transformative. The AI4Good Research Incubator brings together researchers across disciplines to propose and develop computationally sound research projects that examine AI’s impact on society and explore pathways for its safe and responsible integration. Come build research collaborations that go beyond the event, expand your network, and develop innovative inquiries into problems posed by rapidly developing AI systems with the chance to win exciting prizes.
-               </p>
+          The AI4Good Research Incubator is a research-focused ideathon (a hackathon-style event) where interdisciplinary teams of researchers of all backgrounds will explore curiosity-driven questions on the intersection of their own interests and the fields of <strong>AI safety</strong> and <strong>social impacts of AI</strong>. Participants collaborate to develop thoughtful, computationally grounded projects, receive mentorship, and compete for prizes—while laying the foundation for impactful research beyond the event.               </p>
         </div>
         <div className="research-incubator-buttons">
           {sectionData.map(({ id, title }) => (
