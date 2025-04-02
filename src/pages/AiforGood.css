@@ -386,9 +386,16 @@
         width: 100%;
       }
 
+
     .timetable td, .timetable th {
         font-size: 1.5vh;
     }
+
+    tr td:first-child {
+        width: 20vw;
+        white-space: nowrap;
+        font-size: 0.85em;
+      }
 
     .register-button {
         width: 40vw;
