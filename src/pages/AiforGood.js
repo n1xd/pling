@@ -196,7 +196,7 @@ const AiforGood = () => {
       Nope! You only need to be there for key moments like check-ins, pitches, and final presentations. The rest of the time, you're free to collaborate anywhere around Houston Hall or campus. (Food will be served in the Ben Franklin Room, though;)</p>
 
       <p style={{ marginBottom: '1.5em' }}><strong>Is this more of a hackathon or a research event?</strong><br />
-      It’s a bit of both! Think of it as a research-focused hackathon where you work in teams to explore questions that interest you about AI’s societal impact.</p>
+      It’s a bit of both! Think of it as a research-focused hackathon where you work in teams to explore questions that interest you about AI’s safety and societal impact.</p>
 
       <p style={{ marginBottom: '1.5em' }}><strong>Do I need to come with a team?</strong><br />
       Not at all! You can come solo and either have folks join the project you pitch or get behind someone else's idea yourself.</p>
