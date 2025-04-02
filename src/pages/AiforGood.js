@@ -121,10 +121,18 @@ const AiforGood = () => {
       id: 'logistics',
       title: 'Logistics',
       content: (
-        <p>
-          All key sessions of the AI4Good Research Incubator will take place in the <strong>Ben Franklin Room, Houston Hall</strong>. This is also where we will <strong>serve lunch</strong> and make <strong>snacks and beverages</strong> available for all registered participants anytime throughout the day.
-          The registration will begin at <strong>10.00 AM</strong> on <strong>April 19, 2025,</strong> and the final decisions will be announced before <strong>7.30 PM</strong>. 
-          Participants are invited to a networking reception after the event concludes.
+        <p>🏛️ All key sessions of the <strong>AI4Good Research Incubator</strong> will take place in the <strong>Ben Franklin Room, Houston Hall</strong> .
+        <br /><br />
+
+        🍕 This will also be the spot for <strong>lunch and dinner</strong>, with <strong>snacks and beverages</strong> available to all registered participants throughout the day.
+        <br /><br />
+        
+        ⏰ <strong>Registration opens at 10:00 AM</strong> on <strong>Saturday, April 19, 2025</strong>. The event will run through the day, with <strong>final decisions announced before 7:30 PM</strong>.
+        
+        <br /><br />
+        
+        🥂 After the event concludes, all participants are invited to join us for a <strong>networking reception</strong> to wrap up the day.
+        
         </p>
       ),
     },
@@ -177,9 +185,19 @@ const AiforGood = () => {
       title: 'Registration',
       content: (
         <div>
-          <p>
-          Registration is required to participate in AI4Good. While pre-existing teams are encouraged to apply, all team members must submit their own registration form. Competing teams must span across at least two academic departments. (If your team doesn't satisfy this requirement, you'll be able to find more highly qualified team members at the event!) Teams larger than 4 members will not be permitted to compete.
-          </p>
+          <p> 📝 <strong>Pre-registration is required</strong> to participate in AI4GOOD.
+<br /><br />
+
+👥 While pre-existing teams are welcome to apply, <strong>each team member must complete their own registration form</strong>.
+
+<br /><br />
+
+🧠 Competing teams must include members from <strong>at least two different academic departments</strong>.
+ (Don't worry if you can't find teammates from across departments, there’ll be opportunities to connect with others at the event!)
+
+<br /><br />
+
+🔢 <strong>Teams of more than four members will not be allowed to compete</strong>.</p>
           <a href="https://forms.gle/hURpKmt6K8RtAz9K8" target="_blank" rel="noopener noreferrer" className="inc-register-button">
             Register Here!
           </a>
