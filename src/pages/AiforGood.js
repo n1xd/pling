@@ -122,7 +122,7 @@ const AiforGood = () => {
       title: 'Logistics',
       content: (
         <p>
-          All key sessions of the AI4Good Research Incubator will take place in the <strong>Ben Franklin Room, Houston Hall</strong>. This is also where we wills <strong>serve lunch</strong> and make <strong>snacks and beverages</strong> available for all registered participants anytime throughout the day.
+          All key sessions of the AI4Good Research Incubator will take place in the <strong>Ben Franklin Room, Houston Hall</strong>. This is also where we will <strong>serve lunch</strong> and make <strong>snacks and beverages</strong> available for all registered participants anytime throughout the day.
           The registration will begin at <strong>10.00 AM</strong> on <strong>April 19, 2025,</strong> and the final decisions will be announced before <strong>7.30 PM</strong>. 
           Participants are invited to a networking reception after the event concludes.
         </p>
