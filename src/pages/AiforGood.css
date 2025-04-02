@@ -136,12 +136,12 @@
     border: 0.15vw solid rgba(255, 255, 255, 0.7); /* Slightly transparent white border */
     border-radius: 2vw; /* More rounded for a modern look */
     font-family: 'Montserrat', sans-serif;
-    padding: 1.5vh 2.5vw; /* Adjusted padding for balance */
+    padding: 1.5vh 0; /* Adjusted padding for balance */
     font-size: 1.5vw; /* Slightly smaller font for readability */
     color: white; /* White text color */
     cursor: pointer;
     transition: all 0.3s ease; /* Smooth transitions for all properties */
-    width: 15vw; /* Adjusted width for better spacing */
+    width: 12vw; /* Adjusted width for better spacing */
     height: 10vh; /* Remove fixed height, adjust based on padding */
     text-align: center; /* Center text inside buttons */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle outer glow */

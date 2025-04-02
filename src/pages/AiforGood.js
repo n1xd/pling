@@ -186,6 +186,33 @@ const AiforGood = () => {
         </div>
       ),
     },
+    {
+      id: 'FAQ',
+      title: 'FAQ',
+      content: (
+        <div>
+          <div>
+          <p style={{ marginBottom: '1.5em' }}><strong>Do I really have to be in the Ben Franklin Room all day?</strong><br />
+      Nope! You only need to be there for key moments like check-ins, pitches, and final presentations. The rest of the time, you're free to collaborate anywhere around Houston Hall or campus. (Food will be served in the Ben Franklin Room, though;)</p>
+
+      <p style={{ marginBottom: '1.5em' }}><strong>Is this more of a hackathon or a research event?</strong><br />
+      It’s a bit of both! Think of it as a research-focused hackathon where you work in teams to explore questions that interest you about AI’s societal impact.</p>
+
+      <p style={{ marginBottom: '1.5em' }}><strong>Do I need to come with a team?</strong><br />
+      Not at all! You can come solo and either have folks join the project you pitch or get behind someone else's idea yourself.</p>
+
+      <p style={{ marginBottom: '1.5em' }}><strong>Do I need technical experience to participate?</strong><br />
+      Nope! All backgrounds are welcome. We encourage interdisciplinary collaboration, and mentors will be around to support you.</p>
+
+      <p style={{ marginBottom: '1.5em' }}><strong>Will there be food?</strong><br />
+      Yes! Lunch and dinner will be served during the event. We will also accomodate as many diatery restrictions as possible. Vegan, kosher, and allergen-friendly food will be available.</p>
+
+      <p style={{ marginBottom: '1.5em' }}><strong>Can my project continue after the event?</strong><br />
+      Absolutely! This event is designed to spark research ideas. We’d love to see projects grow into papers, prototypes, or even collaborations down the line.</p>
+    </div>
+        </div>
+      ),
+    },
   ];
 
   return (
