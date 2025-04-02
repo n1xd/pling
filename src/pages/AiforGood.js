@@ -202,7 +202,7 @@ const AiforGood = () => {
       Not at all! You can come solo and either have folks join the project you pitch or get behind someone else's idea yourself.</p>
 
       <p style={{ marginBottom: '1.5em' }}><strong>Do I need technical experience to participate?</strong><br />
-      Nope! All backgrounds are welcome. We encourage interdisciplinary collaboration, and mentors will be around to support you.</p>
+      Nope! All backgrounds are welcome. Tech skills are great—but so are your insights on ethics, governance, education, design, social changes, mind, language, and more. We encourage interdisciplinary collaboration and will bring in mentors to support you.</p>
 
       <p style={{ marginBottom: '1.5em' }}><strong>Will there be food?</strong><br />
       Yes! Lunch and dinner will be served during the event. We will also accomodate as many diatery restrictions as possible. Vegan, kosher, and allergen-friendly food will be available.</p>
