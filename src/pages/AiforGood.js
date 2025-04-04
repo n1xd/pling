@@ -161,7 +161,7 @@ const AiforGood = () => {
             <div className="prize-image-container">
             <img src={bestproject} alt="Best Project" className="prize-image" />
             </div>
-            <figcaption className="prize-caption"><strong>Apple Watch SE</strong><br />GPS 40mm Midnight Aluminum Case with Ink Sport Loop</figcaption>
+            <figcaption className="prize-caption"><strong>Apple Watch SE</strong><br />GPS 40mm Midnight Aluminum Case with Ink Sport Loop<br /><strong>FOR ALL TEAM MEMBERS</strong></figcaption>
           </figure>
           </div>
           <div className="prize-item">
@@ -171,7 +171,7 @@ const AiforGood = () => {
             <div className="prize-image-container">
             <img src={bestcommunityproject} alt="Best Community-Oriented Project" className="prize-image" />
             </div>
-            <figcaption className="prize-caption"><strong>AirPods 4</strong><br/> with Active Noise Cancellation	</figcaption>
+            <figcaption className="prize-caption"><strong>AirPods 4</strong><br/> with Active Noise Cancellation<br /><strong>FOR ALL TEAM MEMBERS</strong>	</figcaption>
           </figure>
           </div>
           <p className="assessment-criteria">
@@ -197,9 +197,14 @@ const AiforGood = () => {
 
 <br /><br />
 
-🔢 <strong>Teams of more than four members will not be allowed to compete</strong>.</p>
+🔢 <strong>Teams of more than four members will not be allowed to compete</strong>.
+
+<br /><br />
+
+🚨 <strong>Registration will close on April 12, 11.59PM</strong>.</p>
+
           <a href="https://forms.gle/hURpKmt6K8RtAz9K8" target="_blank" rel="noopener noreferrer" className="inc-register-button">
-            Register Here!
+            Register by April 12!
           </a>
         </div>
       ),
