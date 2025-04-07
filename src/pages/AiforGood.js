@@ -248,6 +248,8 @@ const AiforGood = () => {
   </span>
   <span className="title-line2">Research Incubator</span>
 </h1>
+
+<span className="title-line3">Saturday, APRIL 19</span>
           <p className="research-incubator-description">
           The AI4Good Research Incubator is a research-focused ideathon (a hackathon-style event) where interdisciplinary teams of researchers of all backgrounds will explore curiosity-driven questions on the intersection of their own interests and the fields of <strong>AI safety</strong> and <strong>social impacts of AI</strong>. Participants collaborate to develop thoughtful, computationally grounded projects, receive mentorship, and compete for prizes—while laying the foundation for impactful research beyond the event.               </p>
         </div>

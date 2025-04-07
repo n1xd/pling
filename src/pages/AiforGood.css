@@ -93,6 +93,12 @@
     font-size: 7vh; /* Slightly smaller */
 }
 
+.title-line3 {
+    display: block; /* Forces line break */
+    font-size: 5vh; /* Slightly smaller */
+    font-weight: bold;
+}
+
 .white-text {
     color: white;
   }
