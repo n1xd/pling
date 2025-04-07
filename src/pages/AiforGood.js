@@ -201,10 +201,10 @@ const AiforGood = () => {
 
 <br /><br />
 
-🚨 <strong>Registration will close on April 12, 11.59PM</strong>.</p>
+🚨 <strong>Pre-registration will close on April 12, 11.59PM</strong>.</p>
 
           <a href="https://forms.gle/hURpKmt6K8RtAz9K8" target="_blank" rel="noopener noreferrer" className="inc-register-button">
-            Register by April 12!
+            Pre-register by April 12!
           </a>
         </div>
       ),
