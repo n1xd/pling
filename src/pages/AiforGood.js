@@ -66,7 +66,7 @@ const AiforGood = () => {
     },
     {
       name: "Josué Rivera Rivera",
-      institution: "Independent Consultant",
+      institution: "International Policy Expert",
       image: josue, 
       bio: "Josué is an international policy expert with over 15 years of experience advancing partnerships and programs across governments, NGOs, and international organizations in fragile and conflict-affected settings throughout the Americas and Europe. His work focuses on the intersection of migration, emerging technologies, and international development."
     }
