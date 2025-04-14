@@ -297,6 +297,91 @@
     font-weight: bold;
 }
 
+.judge-image {
+    width: 15vw; /* Adjust size as needed */
+    height: 15vw; /* Ensures it's a perfect circle */
+    border-radius: 50%; /* Makes it round */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    display: block;
+    margin: 3vh auto; /* Centers the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a soft shadow */
+  }
+  
+  .judges-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vh;
+    padding-top: 2vh;
+  }
+  
+  .judge-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Set initial width */
+    min-height: 10vh; /* Small initial height */
+    height: auto;
+    background: transparent;
+    border-radius: 15px;
+    position: relative;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out, min-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transform: scale(0.95); /* Start smaller */
+    opacity: 0.6;
+  }
+  
+  .judge-card.zoomed {
+    transform: scale(1); /* Scale up when in center */
+    opacity: 1;
+    height: auto;
+  }
+  
+  .judge-name {
+    font-size: 2vw; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(to right, #00bcd4, #006064);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 100%; /* Ensures full width */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .judge-institution {
+    font-size: 1.5vw; /* Adjust size as needed */
+    font-weight:lighter;
+    padding-top: 0.2vh;
+    text-align: center;
+    background: linear-gradient(to right, #028972, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 1vh;
+    color: transparent;
+    width: 100%; /* Ensures full width */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .judge-card .judge-bio {
+    font-size: 1.2vw;
+    text-align: center;
+    justify-content: center;
+    padding: 1vh 0; /* Adjust vertical spacing */
+    color: transparent; /* Make text transparent to show gradient */
+    background: linear-gradient(to right, #000000, #017662); /* Black to dark purple */
+    -webkit-background-clip: text; /* Ensures gradient applies to text */
+    background-clip: text;
+    line-height: 1.5;
+    width: 100%; /* Ensures it takes full width */
+    display: block; /* Explicitly treating it as a block element */
+    margin: 0 auto; /* Centers it properly */
+    transition: opacity 0.5s ease-in-out;
+  }
+
 /****** FOOTER ******/
 .research-incubator-footer {
     background-color: white;

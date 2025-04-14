@@ -10,6 +10,9 @@ import bestpitch from '../assets/prizes/bestpitch.jpeg';
 import bestproject from '../assets/prizes/bestproject.jpeg';
 import bestcommunityproject from '../assets/prizes/bestcommunityproject.jpeg';
 import fourLogo from '../assets/icons/4logothin.png';
+import maria from '../assets/judges/maria.jpg';
+import andis from '../assets/judges/andis.jpeg';
+import josue from '../assets/judges/josue.jpg';
 
 const AiforGood = () => {
   const sections = useRef([]);
@@ -47,6 +50,27 @@ const AiforGood = () => {
       window.removeEventListener('scroll', highlightClosestSection);
     };
   }, []);
+
+  const judgesData = [
+    {
+      name: "Maria Kostylew",
+      institution: "University of Oxford",
+      image: maria, 
+      bio: "Maria is a PhD student in Political Science at the University of Oxford. Her interests include AI ethics and governance, authoritarian systems and intellectual history. She is also a researcher at the Centre for European Policy Studies, primarily working on AI governance and democracy related projects. Previously, she has also organized a number of programmes for people transitioning into technical alignment.."
+    },
+    {
+      name: "Andis Draguns",
+      institution: "UL Institute of Mathematics and Computer Science",
+      image: andis, 
+      bio: "Andis is an ML researcher focusing on LLMs, neural architectures, and AI security, with lead-authored papers at NeurIPS and AAAI. As co-founder of Contramont Research, his work includes embedding algorithms in neural networks and designing cryptographic counterexamples to other research agendas. Andis brings expertise in technical safety research that bridges theory with practical implementation."
+    },
+    {
+      name: "Josué Rivera Rivera",
+      institution: "Independent Consultant",
+      image: josue, 
+      bio: "Josué is an international policy expert with over 15 years of experience advancing partnerships and programs across governments, NGOs, and international organizations in fragile and conflict-affected settings throughout the Americas and Europe. His work focuses on the intersection of migration, emerging technologies, and international development."
+    }
+  ];
 
   const sectionData = [
     {
@@ -110,12 +134,18 @@ const AiforGood = () => {
     },
     {
       id: 'judges',
-      title: 'Judges',
-      content: (
-        <p>
-          The panel of judges will be announced soon. We hope to welcome judges from across industry, NGOs, as well as academia. Stay tuned!
-        </p>
-      ),
+  title: 'Judges',
+  content: (
+    <div className="judges-section">
+      {judgesData.map((judge, index) => (
+        <div key={index} className="judges-card">
+          <h3 className="judge-name gradient-text">{judge.name}</h3>
+          <h3 className="judge-institution gradient-text">{judge.institution}</h3>
+          <img src={judge.image} alt={judge.name} className="judge-image" />
+          <p className="judge-bio fade-in">{judge.bio}</p>
+        </div>
+      ))}
+    </div>)
     },
     {
       id: 'logistics',
