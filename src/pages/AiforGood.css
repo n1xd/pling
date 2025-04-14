@@ -465,6 +465,36 @@
         
     }
 
+    
+    .judge-image {
+        width: 40vw; /* Adjust size as needed */
+        height: 40vw; /* Ensures it's a perfect circle */
+        border-radius: 50%; /* Makes it round */
+        object-fit: cover; /* Ensures the image fills the space without distortion */
+        display: block;
+        margin: 3vh auto; /* Centers the image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a soft shadow */
+      }
+
+      .judge-name {
+        font-size: 4.5vw; /* Adjust size as needed */
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        background: linear-gradient(to right, #00bcd4, #006064);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        width: 100%; /* Ensures full width */
+        display: flex;
+        justify-content: center;
+      }
+  
+      .judge-institution {
+        font-size: 3vw; /* Adjust size as needed */
+        margin: 1vh auto;
+      }
+
     .research-incubator-section p {
         font-size: 3.5vw;
     }
