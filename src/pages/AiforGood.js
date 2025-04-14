@@ -56,7 +56,7 @@ const AiforGood = () => {
       name: "Maria Kostylew",
       institution: "University of Oxford",
       image: maria, 
-      bio: "Maria is a PhD student in Political Science at the University of Oxford. Her interests include AI ethics and governance, authoritarian systems and intellectual history. She is also a researcher at the Centre for European Policy Studies, primarily working on AI governance and democracy related projects. Previously, she has also organized a number of programmes for people transitioning into technical alignment.."
+      bio: "Maria is a PhD student in Political Science at the University of Oxford. Her interests include AI ethics and governance, authoritarian systems and intellectual history. She is also a researcher at the Centre for European Policy Studies, primarily working on AI governance and democracy related projects. Previously, she has also organized a number of programmes for people transitioning into technical alignment."
     },
     {
       name: "Andis Draguns",
