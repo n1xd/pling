@@ -359,7 +359,7 @@
     background: linear-gradient(to right, #028972, #000000);
     -webkit-background-clip: text;
     background-clip: text;
-    margin: 1vh;
+    margin: 1vh auto;
     color: transparent;
     width: 100%; /* Ensures full width */
     display: flex;

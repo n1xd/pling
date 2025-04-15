@@ -231,11 +231,11 @@ const AiforGood = () => {
 
 <br /><br />
 
-🚨 <strong>Pre-registration will close on <del>April 12, 11.59PM</del> April 14, 11.59PM</strong>.</p>
+🚨 Pre-registration closed on April 14 11.59PM (AoE). <strong>Really want in? Make your case!</strong> Email <a href="mailto:ndatkova@sas.upenn.edu">ndatkova@sas.upenn.edu</a> your research idea (related to AI safety and/or social impacts of AI) in 2-3 sentences and we'll see about fitting you in :)</p>
 
-          <a href="https://forms.gle/hURpKmt6K8RtAz9K8" target="_blank" rel="noopener noreferrer" className="inc-register-button">
-            Pre-register by April 14!
-          </a>
+<div className="inc-register-button" style={{ cursor: "default", color: "#aaa" }}>
+  Pre-registration is now closed
+</div>
         </div>
       ),
     },
