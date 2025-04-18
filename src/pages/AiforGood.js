@@ -91,11 +91,11 @@ const AiforGood = () => {
                     <td><strong>Welcome, Icebreakers, & Expectation-Setting</strong></td>
                   </tr>
                   <tr>
-                    <td>10.45 AM</td>
+                    <td>11.00 AM</td>
                     <td><strong>Meet the Judges</strong></td>
                   </tr>
                   <tr>
-                    <td>11.00 AM</td>
+                    <td>11.15 AM</td>
                     <td><strong>Pitches & Team-Forming</strong></td>
                   </tr>
                   <tr>
@@ -103,7 +103,7 @@ const AiforGood = () => {
                     <td>Lunch (served)</td>
                   </tr>
                   <tr>
-                    <td>1.00 PM</td>
+                    <td>12.30 PM</td>
                     <td>Idea Validation & Mentoring</td>
                   </tr>
                   <tr>
@@ -116,7 +116,7 @@ const AiforGood = () => {
                   </tr>
                   <tr>
                     <td>6.00 PM</td>
-                    <td>Dinner (served)</td>
+                    <td>Dinner (served) + Networking</td>
                   </tr>
                   <tr>
                     <td>7.00 PM</td>
